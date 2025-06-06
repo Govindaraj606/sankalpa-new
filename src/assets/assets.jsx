@@ -178,7 +178,6 @@ export const assets = {
     mapcall,
     navbar,
     dot1,
-    mapcall,
     drImage,
     consultantIcon,
     experienceIcon,
