@@ -1,0 +1,306 @@
+.full {
+    background: #F8F2FF;
+}
+
+.contentpart {
+    margin: 0px 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.mainheading {
+    color: #135673;
+    font-family: "Train One";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.mainheading_ent {
+    color: #135673;
+    font-family: "Train One";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.cardpart {
+    margin-top: 50px;
+}
+
+.heading {
+    color: #135673;
+    font-family: "Train One";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.para {
+    text-align: center;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 150% */
+}
+
+.card1 {
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+}
+
+.card2 {
+    width: 300px;
+    padding: 20px 20px 36px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    background: #FFF;
+}
+
+.subheading {
+    font-family: Outfit;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.subpara {
+    font-family: Outfit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+    width: 260px;
+}
+
+.card1:hover {
+    border-radius: 20px;
+    background: #135673;
+    color: #FFFFFF;
+}
+
+.card2:hover {
+    border-radius: 20px;
+    background: #135673;
+    color: #FFFFFF;
+}
+
+.cards {
+    /* display: flex; */
+    gap: 20px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+}
+
+.mt {
+    margin-top: 20px;
+}
+
+.ent {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+
+.box1 {
+    display: inline-flex;
+    padding: 26px 13px 26px 14px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    background: #00834E;
+}
+
+.box2 {
+    display: inline-flex;
+    padding: 26px 29px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    background: #B10018;
+}
+
+.btn {
+    padding: 20px 31px;
+    gap: 10px;
+    border-radius: 8px;
+    background: #135673;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.day {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.time {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.ent_part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card1:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.card2:hover img {
+    filter: brightness(0) invert(1);
+}
+
+/* lap */
+
+@media(max-width:1439px) {
+    .heading {
+        text-align: center;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .box1 {
+        padding: 16px 13px 16px 14px;
+    }
+
+    .box2 {
+        padding: 16px 19px;
+    }
+
+    .time {
+        font-size: 14px;
+    }
+
+    .bottom-part {
+        position: relative;
+        top: 0px;
+    }
+
+    .day {
+        font-size: 22px;
+    }
+    .mainheading_ent {
+        margin-top: 50px;
+    }
+
+}
+
+
+/* tab */
+
+@media(max-width:1023px) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mainheading {
+        font-size: 30px;
+        /* margin-top: 50px; */
+    }
+
+    .ent {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
+
+/* mobile */
+@media(max-width:767px) {
+
+
+    .contentpart {
+        padding: 20px 10px;
+        margin: 0px 10px;
+    }
+
+    .mainheading {
+        font-size: 26px;
+    }
+
+    .para {
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+
+    .heading {
+        font-size: 26px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .subheading {
+        font-size: 22px;
+    }
+
+    .subpara {
+        font-size: 14px;
+    }
+}
