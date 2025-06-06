@@ -1,7 +1,6 @@
 import React from 'react'
-import styles from './Entpart.module.css'
+import styles from './ENTpart.module.css'
 import { Link } from 'react-router-dom';
-
 import { useRef, useState, useEffect } from 'react';
 import { gsap } from 'gsap';
 
