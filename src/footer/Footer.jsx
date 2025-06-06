@@ -11,8 +11,8 @@ const Footer = () => {
                     <div className='box-1'>
                         <div className='botton-heading underline-1'>< img className='bottom-logo' src={assets.logoresp} alt="" />SANKALPA CLINIC</div>
                         <div className='location'><img src={assets.location} alt="" /> 15, RPC Layout, Hoshalli Extension, Stage 1, Vijayanagar, Bengaluru, Karnataka 560040</div>
-                        <a href="tel:+91 98440 05600"><div className='phone'><img src={assets.phone} alt="" />099459 94257 / 9735121129</div></a>
-                        <a href="mailto:contact@sankalpaclinic.com"><div className='mail'><img src={assets.mail} alt="" /> sriduttshekar@gmail.com</div></a>
+                        <a href="tel:099459 94257 / 9735121129"><div className='phone'><img src={assets.phone} alt="" />099459 94257 / 9735121129</div></a>
+                        <a href="mailto:sriduttshekar@gmail.com"><div className='mail'><img src={assets.mail} alt="" /> sriduttshekar@gmail.com</div></a>
                     </div>
                 </div>
 

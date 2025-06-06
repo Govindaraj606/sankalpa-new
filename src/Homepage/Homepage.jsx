@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './Homepage.css'
 import { assets } from '../assets/assets'
 import { useForm } from "react-hook-form";
@@ -10,11 +10,21 @@ import { Link, useActionData } from 'react-router-dom';
 const Homepage = () => {
 
     const knowMore = useRef(null)
-    const Home = useRef()
 
     const scrollToForm = () => {
         knowMore.current?.scrollIntoView({ behavior: 'smooth' });
     };
+    // const showRef = useRef()
+    const [isShow, setIsShow] = useState([false, false]);
+
+    const showCard = (index) => {
+        const newShow = [...isShow];
+        newShow[index] = !newShow[index];
+        setIsShow(newShow);
+        // console.log(isShow)
+    };
+
+
 
     const {
         register,
@@ -148,7 +158,7 @@ const Homepage = () => {
 
             <div className="doctors-part">
                 <div className="doctor-heading">Our Expert Doctors</div>
-                <div className='doctor-content'>
+                <div className='doctor-content' >
                     <div className='doctor-card'>
                         <img className="doctor-img-card" src={assets.cardimg} alt="" />
                         <div className='doctor-deatils'>
@@ -172,12 +182,14 @@ const Homepage = () => {
                     </div>
                 </div>
             </div>
+
+
             {/* Mobile */}
             <div className='mobile-doctors-part'>
                 <div className="doctor-heading">Our Expert Doctors</div>
-                <div className='mobile-doctor-content'>
+                <div className='mobile-doctor-content' >
                     <div className='mobile-card'>
-                        <div className='mobile-doctor-card'>
+                        <div className='mobile-doctor-card' onClick={() => showCard(0)} style={{ height: isShow[0] ? "500px" : "280px" }} >
                             <img className="mobile-doctor-img-card" src={assets.cardimg} alt="" />
                             <div className='mobile-doctor-deatils'>
                                 <div className="mobile-doctor-name">Dr. N.A. Jagadish </div>
@@ -188,7 +200,7 @@ const Homepage = () => {
                             </div>
                         </div>
 
-                        <div className='mobile-doctor-card'>
+                        <div className='mobile-doctor-card' onClick={() => showCard(1)} style={{ height: isShow[1] ? "500px" : "280px" }}>
                             <img className="mobile-doctor-img-card" src={assets.cardimg} alt="" />
                             <div className='mobile-doctor-deatils'>
                                 <div className="mobile-doctor-name">Dr. Sridutt Shekar </div>
@@ -237,12 +249,18 @@ const Homepage = () => {
                             </div>
                             <form onSubmit={handleSubmit(onSubmit)}>
                                 <div className=''>
-                                    <input {...register("firstname", { required: true })} className='input-name border input underline' type="text" placeholder='Name*' />
+                                    <input {...register("firstname", { required: true, pattern: /^[A-Za-z]+$/i })} className='input-name border input underline' type="text" placeholder='Name*' />
                                     {errors.firstname && <span className='alert-msg'>Name is required</span>}
                                 </div>
                                 <div className=''>
-                                    <input {...register("phonenumber", { required: true })} className='input-contact border input underline' type="phone" placeholder='Contact no*' />
-                                    {errors.firstname && <span className='alert-msg'>phone number is required</span>}
+                                    <input  {...register("phonenumber", {
+                                        required: "Phone number is required",
+                                        pattern: {
+                                            value: /^[0-9]{10}$/,
+                                            message: "Enter a valid 10-digit phone number"
+                                        }
+                                    })} className='input-contact border input underline' type="phone" inputMode="numeric" maxLength={10} placeholder='Contact no*' />
+                                    {errors.phonenumber && <span className='alert-msg'>{errors.phonenumber.message || 'Phone number is required'}</span>}
                                 </div>
                                 <div className=''>
                                     <textarea {...register("message", { required: true })} className='msg border input underline' placeholder='Message'></textarea>
@@ -254,10 +272,10 @@ const Homepage = () => {
                     </div>
 
                     <div className='info-part-1'>
-                        
-                            <img className='ractangle-img' src={assets.ractangle} alt="" />
-                            <img className='ractangle-resp' src={assets.ractangleresp} alt="" />
-                       
+
+                        <img className='ractangle-img' src={assets.ractangle} alt="" />
+                        <img className='ractangle-resp' src={assets.ractangleresp} alt="" />
+
                         <div className='info'>
                             <div className='info-heading'>Clinic Address</div>
                             <div className='flex1'>
@@ -266,11 +284,11 @@ const Homepage = () => {
                             </div>
                             <div className='flex1'>
                                 <img src={assets.call} alt="" />
-                                <div className='info-para height'> 099459 94257 / 9735121129</div>
+                                <a href="tel:099459 94257 / 9735121129"><div className='info-para height'> 099459 94257 / 9735121129</div></a>
                             </div>
                             <div className='flex1'>
                                 <img src={assets.mail1} alt="" />
-                                <div className='info-para height'> sriduttshekar@gmail.com</div>
+                                <a href="mailto:sriduttshekar@gmail.com"><div className='info-para height'> sriduttshekar@gmail.com</div></a>
                             </div>
 
                             <div className='info-heading'>Timings</div>

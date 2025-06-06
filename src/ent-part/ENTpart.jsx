@@ -23,7 +23,7 @@ const Entpart = (props) => {
         gsap.to(cardRefs.current[index].current, {
             rotationY: isFlipped ? 180 : 0,
             duration: 0.5,
-            ease: "power2.inOut"
+            ease: "power2.inOut" 
         });
     };
 

@@ -52,6 +52,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 50px;
+    align-items: center;
 
 }
 
@@ -59,6 +60,7 @@
     padding: 20px;
     display: flex;
     width: 300px;
+    height: 380px;
     padding: 20px 20px 62px 20px;
     flex-direction: column;
     align-items: flex-start;
@@ -156,6 +158,9 @@
     .cards {
         display: grid;
         grid-template-columns: 1fr;
+    }
+    .card1{
+        width: 290px;
     }
 
 

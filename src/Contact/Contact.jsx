@@ -1,7 +1,10 @@
-import React from 'react'
+import React,{useEffect ,useState} from 'react'
 import styles from './Contact.module.css'
 import { assets } from '../assets/assets'
 import { useForm } from "react-hook-form";
+import {toast , ToastContainer} from "react-toastify";
+import emailjs from "@emailjs/browser"
+import {init} from "@emailjs/browser"
 
 const Contact = () => {
 
@@ -13,11 +16,30 @@ const Contact = () => {
         formState: { errors },
     } = useForm()
 
+
+    const [isSubmitting, setIsSubmitting] = useState(false)
+
+    useEffect(() => {
+        init("f7E7AKcXg_PXLji7T"); // Initialize once
+    },[]);
+
     const onSubmit = (data) => {
-        console.log(data);
-        reset();
-        alert("Form submitted successfully!")
-    }
+        setIsSubmitting(true);
+        emailjs.send(
+            "service_vktzxwj",
+            "template_s41mo2p",
+            data
+        )
+            .then(() => {
+                toast.success("Email sent successfully!");
+                reset();
+            })
+            .catch(() => {
+                toast.error("Failed to send email");
+            })
+            .finally(() => setIsSubmitting(false));
+    };
+
     return (
         <div className={styles.maindiv}>
             <div className={styles.full}>
@@ -30,11 +52,11 @@ const Contact = () => {
 
                     <div className={styles.flex}>
                         <img src={assets.mapcall} alt="" />
-                        <div className={styles.para}>099459 94257 / 9735121129</div>
+                        <a href="tel:099459 94257 / 9735121129"><div className={styles.para}>099459 94257 / 9735121129</div></a>
                     </div>
                     <div className={styles.flex}>
                         <img src={assets.mapmail} alt="" />
-                        <div className={styles.para}>sriduttshekar@gmail.com</div>
+                        <a href="mailto:sriduttshekar@gmail.com"><div className={styles.para}>sriduttshekar@gmail.com</div></a>
                     </div>
                     <div className={styles.card1_heading}>Timings</div>
                     <div className={styles.flex}>
@@ -63,14 +85,20 @@ const Contact = () => {
                                 {errors.name && <span className={styles.alert_msg} >Name is required</span>}
                             </div>
                             <div className={styles.flex_1}>
-                                <input {...register("phonenumber", { required: true })} className={styles.phone} type="phone" placeholder='Contact no*' />
-                                {errors.name && <span className={styles.alert_msg}>phone number is required</span>}
+                                <input   {...register("contact", {
+                                    required: "Phone number is required",
+                                    pattern: {
+                                        value: /^[0-9]{10}$/,
+                                        message: "Enter a valid 10-digit phone number"
+                                    }
+                                })} className={styles.phone} type="tel" inputMode="numeric" maxLength={10} placeholder='Contact no*' />
+                                {errors.contact && <span className={styles.alert_msg}>{errors.contact.message || 'Phone number is required'}</span>}
                             </div>
                             <div className={styles.flex_1}>
                                 <textarea {...register("message", { required: true })} className={styles.msg} placeholder='Message'></textarea>
                                 {errors.message && <span className={styles.alert_msg}>message is required</span>}
                             </div>
-                            <button type='submit' className={styles.form_btn}>Send</button>
+                            <button type='submit' className={styles.form_btn} disabled={isSubmitting}>Send</button>
                         </form>
                     </div>
                 </div>
@@ -86,6 +114,9 @@ const Contact = () => {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade">
                 </iframe>
+            </div>
+            <div>
+                <ToastContainer/>
             </div>
         </div>
     )

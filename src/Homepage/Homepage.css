@@ -107,11 +107,12 @@
 
 .content-part {
     margin: 100px;
+    
 }
 
 .content-heading-part {
     position: relative;
-    top: 50px;
+    top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,7 +147,6 @@
 .frame-imgs {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     gap: 50px;
     margin-top: 50px;
     width: 170px;
@@ -159,6 +159,7 @@
     flex-direction: column;
     gap: 50px;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .frame-content {
@@ -193,13 +194,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    /* 166.667% */
 }
 
 .services-part {
     position: relative;
     top: 10px;
     margin: 50px;
+    padding-top: 50px;
 }
 
 .cards {
@@ -320,7 +321,9 @@
 
 
 /* doctor part */
-
+.doctors-part{
+    margin-top:100px;
+}
 
 .doctor-heading {
     text-align: center;
@@ -669,9 +672,7 @@ form {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* margin-left: 50px; */
-    /* padding-left: 50px; */
-
+    margin-top: 100px;
 }
 
 .info {
@@ -733,7 +734,10 @@ form {
     padding-left: 40px;
 }
 
-
+a{
+    text-decoration: none;
+    color: white;
+}
 
 .mobile-doctors-part {
     display: none;
@@ -744,14 +748,14 @@ form {
     flex-direction: column;
     gap: 50px;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .mobile-doctor-card {
     display: flex;
     flex-direction: column;
     width: 327px;
-    height: 280px;
+    /* height: 280px; */
     padding: 20px 0px;
     align-items: center;
     flex-shrink: 0;
@@ -770,9 +774,9 @@ form {
     border-radius: 12px;
 }
 
-.mobile-doctor-card:hover {
+/* .mobile-doctor-card:hover {
     height: 500px;
-}
+} */
 
 .mobile-doctor-deatils {
     min-height: 210px;
@@ -1011,6 +1015,9 @@ form {
         flex-direction: column;
     }
 
+    .box{
+        right: 70px;
+    }
 
 }
 
@@ -1056,6 +1063,10 @@ form {
         flex-direction: column;
         align-items: center;
     }
+    .content-part-1{
+        margin-top: 10px;
+        gap: 10px;
+    }
 
     .main-headding {
         font-size: 20px;
@@ -1091,6 +1102,7 @@ form {
         display: flex;
         flex-direction: column;
         gap: 50px;
+        margin-top: 0px;
     }
 
     .cards {
@@ -1130,6 +1142,7 @@ form {
 
     .services-part {
         top: 20px;
+        padding-top: 0px;
     }
 
     .testimonial-part-1 {
@@ -1148,7 +1161,8 @@ form {
         align-items: center;
         padding-left: 20px;
         position: relative;
-        top: 100px;
+        top: 5px;
+        margin-top: 0px;
     }
 
     .ractangle-img {
@@ -1239,7 +1253,7 @@ form {
     .mobile-doctors-part {
         display: block;
         position: relative;
-        top: 120px;
+        top: 0px;
     }
 
 
@@ -1290,8 +1304,10 @@ form {
     .ractangle-resp {
         display: block;
         width: 100vw;
-        height: 90vh;
+        height: 80vh;
         margin-top: 20px;
+        position: relative;
+        top: 50px;
     }
 
     .nav-bar {
@@ -1301,7 +1317,7 @@ form {
     .banner-part {
         margin: 10px;
         position: relative;
-        top: 60px;
+        top:0px;
     }
 
     .heading-part {
@@ -1400,6 +1416,8 @@ form {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 0px;
+        gap: 0px;
     }
 
     .content-para {
@@ -1418,6 +1436,7 @@ form {
     .cards {
         display: flex;
         flex-direction: column;
+        gap: 10px;
     }
 
     .card-1 {
@@ -1455,7 +1474,7 @@ form {
         font-style: normal;
         font-weight: 400;
         line-height: 56px;
-        margin-top: 50px;
+        margin-top: 0px;
         /* 175% */
     }
 
@@ -1472,6 +1491,7 @@ form {
     .services-part {
         top: 120px;
         margin: 20px;
+        padding-top: 0px;
     }
 
     .testimonial-part {
@@ -1500,14 +1520,15 @@ form {
     .info-part {
         display: flex;
         flex-direction: column;
-        padding: 15px;
+        padding:0px 15px;
         flex-shrink: 0;
+        top: 100px;
     }
 
     .info {
         width: 250px;
         position: absolute;
-        top: 80px;
+        top: 130px;
         left: 47px;
 
     }
@@ -1539,7 +1560,7 @@ form {
     .form-btn {
         width: 70%;
         font-size: 17px;
-        margin-left: 25px;
+        /* margin-left: 25px; */
 
     }
 
@@ -1570,6 +1591,7 @@ form {
         position: relative;
         width: 360px;
         flex-shrink: 0;
+        top: 50px;
     }
 
     form {
@@ -1579,7 +1601,7 @@ form {
     }
 
     .icons {
-        top: 550px;
+        top: 520px;
         left: 187px;
     }
 
@@ -1636,4 +1658,10 @@ form {
         display: none;
     }
 
+    .box{
+        display: none;
+    }
+    .mobile-doctors-part{
+        top: 100px;
+    }
 }

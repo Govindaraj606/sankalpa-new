@@ -20,7 +20,7 @@ const Jagadish = () => {
         newisHover[index] = isHover;
         setIsHovered(newisHover)
 
-        console.log(newisHover, index)
+        // console.log(newisHover, index)   
 
     }
 

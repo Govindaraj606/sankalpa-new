@@ -292,7 +292,7 @@ a {
 
     .bottom-part {
         position: relative;
-        top:190px;
+        top:196px;
     }
 
     .underline-2 {
@@ -320,7 +320,7 @@ a {
 @media(max-width:1023px) {
     .bottom-part{
         position: relative;
-        top:90px;
+        top:0px;
     }
 
     .botton-heading {
@@ -398,7 +398,7 @@ a {
     .mobile-footer {
         display: block;
         position: relative;
-        top: 80px;
+        top: 150px;
     }
 
 }
