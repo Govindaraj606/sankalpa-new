@@ -5,7 +5,7 @@ import Navbar from '../../nav-bar/Navbar'
 import Footer from '../../footer/Footer'
 import { Link } from 'react-router-dom'
 import Entpart from '../../ent-part/ENTpart.jsx'
-import DoctorPageBanner from '../../DoctorPageBanner/doctorPageBanner'
+import DoctorPageBanner from '../../DoctorPageBanner/DoctorPageBanner'
 
 
 

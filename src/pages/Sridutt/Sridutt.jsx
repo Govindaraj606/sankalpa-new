@@ -5,7 +5,7 @@ import { assets } from '../../assets/assets';
 import Footer from '../../footer/Footer';
 import { Link } from 'react-router-dom';
 import Entpart from '../../ent-part/ENTpart';
-import DoctorPageBanner from '../../DoctorPageBanner/doctorPageBanner';
+import DoctorPageBanner from '../../DoctorPageBanner/DoctorPageBanner';
 
 const Sridutt = () => {
 
