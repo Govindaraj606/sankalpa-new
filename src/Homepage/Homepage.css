@@ -112,7 +112,7 @@
 
 .content-heading-part {
     position: relative;
-    top: 100px;
+    top: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1283,7 +1283,7 @@ a {
 
     .banner-resp {
         display: block;
-        height: 88vh;
+        height: 83vh;
         width: 100vw;
         position: absolute;
         top: 70px;
@@ -1403,7 +1403,7 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        top: 30px;
+        top: 40px;
     }
 
     .content-main-heading {
