@@ -40,7 +40,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 22px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
 .card_2 {

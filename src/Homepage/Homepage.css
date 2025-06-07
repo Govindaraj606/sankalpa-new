@@ -1282,7 +1282,7 @@ a{
 
     .banner-resp {
         display: block;
-        height: 103vh;
+        height: 90vh;
         width: 100vw;
         position: absolute;
         top: 70px;
@@ -1305,9 +1305,9 @@ a{
         display: block;
         width: 100vw;
         height: 80vh;
-        margin-top: 20px;
-        position: relative;
-        top: 50px;
+        margin-top: 80px;
+        /* position: relative;
+        top: 50px; */
     }
 
     .nav-bar {
@@ -1317,7 +1317,7 @@ a{
     .banner-part {
         margin: 10px;
         position: relative;
-        top:0px;
+        top:30px;
     }
 
     .heading-part {
@@ -1356,9 +1356,9 @@ a{
         display: block;
         position: relative;
         width: auto;
-        height: 47vh;
-        right: -44px;
-        top: 0px;
+        height: 43vh;
+        right: -51px;
+        top: -51px;
     }
 
     .doctor-content {
@@ -1400,7 +1400,7 @@ a{
         display: flex;
         flex-direction: column;
         align-items: center;
-        top: 120px;
+        /* top: 120px; */
     }
 
     .content-main-heading {
@@ -1489,7 +1489,7 @@ a{
 
 
     .services-part {
-        top: 120px;
+        /* top: 120px; */
         margin: 20px;
         padding-top: 0px;
     }
@@ -1662,6 +1662,9 @@ a{
         display: none;
     }
     .mobile-doctors-part{
-        top: 100px;
+        /* top: 100px; */
+    }
+    .info-part-1{
+        top: -115px;
     }
 }
