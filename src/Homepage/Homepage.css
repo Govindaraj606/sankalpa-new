@@ -1283,7 +1283,7 @@ a {
 
     .banner-resp {
         display: block;
-        height: 90vh;
+        height: 88vh;
         width: 100vw;
         position: absolute;
         top: 70px;
@@ -1295,6 +1295,8 @@ a {
 
     .group-resp {
         display: block;
+        width: 98%;
+        height: auto;
     }
 
     .ractangle-img {
@@ -1401,7 +1403,7 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        top: 50px;
+        top: 30px;
     }
 
     .content-main-heading {
@@ -1529,7 +1531,7 @@ a {
     .info {
         width: 250px;
         position: absolute;
-        top: 130px;
+        top: 150px;
         left: 47px;
 
     }
@@ -1579,7 +1581,7 @@ a {
     }
 
     .underline {
-        width: 328px;
+        width: 310px;
     }
 
     .form-heading {
@@ -1599,7 +1601,7 @@ a {
     }
 
     .icons {
-        top: 555px;
+        top: 573px;
         left: 187px;
     }
 
@@ -1665,6 +1667,6 @@ a {
     }
 
     .info-part-1 {
-        top: -115px;
+        top: -80px;
     }
 }

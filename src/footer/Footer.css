@@ -397,8 +397,8 @@ a {
 
     .mobile-footer {
         display: block;
-        /* position: relative;
-        top: 35px; */
+        position: relative;
+        /* top: 35px; */
     }
 
 }
