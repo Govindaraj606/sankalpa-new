@@ -156,8 +156,10 @@
     }
 
     .cards {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
     }
     .card1{
         width: 290px;

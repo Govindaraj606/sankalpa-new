@@ -1,5 +1,5 @@
 import React from 'react'
-import './Navbar.css'
+import styles from './Navbar.module.css'
 import { assets } from '../assets/assets'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
@@ -10,11 +10,16 @@ const Navbar = () => {
     const [showDoctors, setShowDoctors] = useState(false);
     const [isOpen, setIsOpen] = useState(true);
 
-    
-
-
     const toggleDoctors = () => setShowDoctors(!showDoctors);
-    const closeDoctors = () => setShowDoctors(false);
+    const closeDoctors = () => {
+        setShowDoctors(false);
+        setIsOpen(true)
+    }
+
+    const handleLinkClick = () => {
+        setIsOpen(true);
+    };
+
 
 
 
@@ -36,40 +41,40 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className='nav-bar'>
+            <div className={styles.nav_bar}>
                 <div className=''>
-                    <img className='logo' src={assets.logo} alt="" />
+                    <img className={styles.logo} src={assets.logo} alt="" />
                 </div>
 
-                <div className='list'>
-                    <Link className='link' to={"/"}><div className='li' onClick={closeDoctors}>Home</div></Link>
-                    <div className="nav-item" onClick={toggleDoctors}>
+                <div className={styles.list}>
+                    <Link className={styles.link} to={"/"}><div className={styles.li} onClick={closeDoctors}>Home</div></Link>
+                    <div className={styles.nav_item} onClick={toggleDoctors}>
                         Doctor
                         {showDoctors && (
-                            <div className="doctor-dropdown">
+                            <div className={styles.doctor_dropdown}>
                                 {doctors.map((doc, index) => (
-                                    <Link to={doc.link} key={index} className="nav-card" onClick={closeDoctors}>
-                                        <img src={doc.img} alt={doc.name} className="doc-img" />
+                                    <Link to={doc.link} key={index} className={styles.nav_card} onClick={closeDoctors}>
+                                        <img src={doc.img} alt={doc.name} className={styles.doc_img} />
                                         <div >
-                                            <div className='name'>{doc.name}</div>
-                                            <div className='title'>{doc.title}</div>
+                                            <div className={styles.name}>{doc.name}</div>
+                                            <div className={styles.title}>{doc.title}</div>
                                         </div>
                                     </Link>
                                 ))}
                             </div>
                         )}
                     </div>
-                    <Link className='link' to={"/Contact"}><div className='li' onClick={closeDoctors}>Contact Us</div></Link>
+                    <Link className={styles.link} to={"/Contact"}><div className={styles.li} onClick={closeDoctors}>Contact Us</div></Link>
                 </div>
             </div>
 
 
-            
+
             {/* mobile Menu */}
-            <div className='navbar-res'>
-                <div className='navbar-header'>
-                    <img className='logo-resp' src={assets.logoresp} alt="" />
-                    <div className='navbar-img' onClick={() => {
+            <div className={styles.navbar_res}>
+                <div className={styles.navbar_header}>
+                    <img className={styles.logo_resp} src={assets.logoresp} alt="" />
+                    <div className={styles.navbar_img} onClick={() => {
                         setIsOpen(!isOpen)
                         // console.log(isOpen)
                     }}>
@@ -77,32 +82,31 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div
-                    className='nav-list-resp'
+                    className={styles.nav_list_resp}
                     style={isOpen ? { transform: 'translateY(-1000px)' } : { transform: 'translateY(0)' }}
                 >
-                    <Link className='link' to={'/'} ><div>Home</div></Link>
+                    <Link className={styles.link} to={'/'} onClick={handleLinkClick} ><div>Home</div></Link>
 
-                    <div className="mobile-nav-item" onClick={toggleDoctors}>
+                    <div className={styles.mobile_nav_item} onClick={toggleDoctors}>
                         Doctor
                         {showDoctors && (
-                            <div className="doctor-dropdown">
+                            <div className={styles.doctor_dropdown}>
                                 {doctors.map((doc, index) => (
-                                    <Link to={doc.link} key={index} className="nav-card" onClick={closeDoctors}>
+                                    <Link to={doc.link} key={index} className={styles.nav_card} onClick={closeDoctors}>
                                         {/* <img src={doc.img} alt={doc.name} className="doc-img" /> */}
                                         <div >
-                                            <div className='name'>{doc.name}</div>
-                                            <div className='title'>{doc.title}</div>
+                                            <div className={styles.name}>{doc.name}</div>
+                                            <div className={styles.title}>{doc.title}</div>
                                         </div>
                                     </Link>
                                 ))}
                             </div>
                         )}
                     </div>
-                    <Link className='link' to={'/Contact'}><div>Contact</div></Link>
+                    <Link className={styles.link} to={'/Contact'} onClick={handleLinkClick}><div>Contact</div></Link>
 
                 </div>
             </div>
-
         </div>
     )
 }
