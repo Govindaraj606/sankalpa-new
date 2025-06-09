@@ -592,6 +592,7 @@
 
 .input:focus-visible {
     outline: none;
+    color: #000;
 }
 
 
@@ -1221,9 +1222,9 @@ a {
         line-height: normal;
     }
 
-    .info-para {
+    /* .info-para {
         padding-left: 20px;
-    }
+    } */
 
     .bottom-part {
         top: 0px;
@@ -1265,7 +1266,7 @@ a {
 
 /* Mobile */
 
-@media(max-width:767px) {
+@media(max-width:400px) {
 
     .logo {
         display: none;
@@ -1309,8 +1310,6 @@ a {
         width: 100vw;
         height: 80vh;
         margin-top: 80px;
-        /* position: relative;
-        top: 50px; */
     }
 
     .nav-bar {
@@ -1325,9 +1324,7 @@ a {
 
     .heading-part {
         position: relative;
-        /* left: -10px; */
         top: 0px;
-        /* margin-left: 0px; */
     }
 
     .dot {
@@ -1396,8 +1393,6 @@ a {
     .content-part {
         margin: 10px;
     }
-
-
 
     .content-heading-part {
         display: flex;
@@ -1669,4 +1664,110 @@ a {
     .info-part-1 {
         top: -80px;
     }
+}
+
+@media(max-width:767px){
+    .banner-img{
+        display: none;
+    }
+    .banner-resp {
+        display: block;
+        height: 73vh;
+        width: 100vw;
+        position: absolute;
+        top: 70px;
+    }
+
+    .content-part{
+        margin:0px 30px;
+    }
+
+     .heading-part {
+        position: relative;
+        top: 0px;
+        text-align: center;
+    }
+
+    .btn-2{
+        width: 130px;
+    }
+    .sub-headding{
+        width: 298px;
+    }
+
+    .main-headding{
+        width: 370px;
+    }
+
+    .doctorimgresp {
+        display: block;
+        position: relative;
+        width: auto;
+        height: 43vh;
+        right: -51px;
+        top: -51px;
+    }
+
+    .frame-imgs {
+        gap: 5px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .frame-img{
+        width: 120px;
+    }
+    .content-part-1{
+        align-items: center;
+    }
+
+     .doctor-heading {
+        color: #135673;
+        font-family: "Train One";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 56px;
+        margin-top: 0px;
+        /* 175% */
+    }
+
+     .info-part {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 15px;
+        flex-shrink: 0;
+        top: 116px;
+    }
+
+    .info-part-1{
+        top: -112px;
+    }
+
+     .ractangle-img {
+        display: none;
+
+    }
+    .box{
+        display: none;
+    }
+
+    .ractangle-resp {
+        display: block;
+        width: 100vw;
+        height: 80vh;
+        margin-top: 80px;
+    }
+     .info {
+        width: 335px;
+        position: absolute;
+        top: 230px;
+        left: 47px;
+        line-height: normal;
+    }
+
+    
+
+    
 }
