@@ -1,6 +1,6 @@
-@media (min-width : 300px){
+@media (min-width : 300px) {
 
-    .mobileRootContainer{
+    .mobileRootContainer {
         display: flex;
         flex-direction: column;
         display: flex;
@@ -8,11 +8,11 @@
         overflow-x: hidden;
     }
 
-    .desktopRootContainer{
+    .desktopRootContainer {
         display: none;
     }
 
-    .container{
+    .container {
         /* height:; */
         display: flex;
         flex-direction: column;
@@ -21,7 +21,7 @@
         background: #135673;
     }
 
-    .docName{
+    .docName {
         color: #C6DEFD;
         font-family: Outfit;
         font-size: 38px;
@@ -32,7 +32,7 @@
         text-transform: capitalize;
     }
 
-    .docQualiication{
+    .docQualiication {
         color: #C6DEFD;
         font-family: Outfit;
         font-size: 22px;
@@ -42,7 +42,7 @@
         text-transform: capitalize;
     }
 
-    .docExperience{
+    .docExperience {
         color: #C6DEFD;
         font-family: Outfit;
         font-size: 16px;
@@ -53,7 +53,7 @@
         text-transform: capitalize;
     }
 
-    .expContainer{
+    .expContainer {
         display: flex;
         /* justify-content: center; */
         align-items: center;
@@ -61,12 +61,12 @@
         margin-top: 10px;
     }
 
-    .expContainer img{
+    .expContainer img {
         width: 40px;
         height: auto;
     }
 
-    .appointmentButton{
+    .appointmentButton {
         display: flex;
         align-items: center;
         gap: 20px;
@@ -77,11 +77,11 @@
         margin-top: 15px;
     }
 
-    .buttonContainer{
+    .buttonContainer {
         width: 295px;
     }
 
-    .buttonBg1{
+    .buttonBg1 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -98,7 +98,7 @@
         height: 42px;
     }
 
-    .buttonBg2{
+    .buttonBg2 {
         padding: 0 12px;
         display: flex;
         justify-content: center;
@@ -115,80 +115,80 @@
         height: 42px;
     }
 
-    .rightArrow{
+    .rightArrow {
         width: 20px;
     }
 
-    .docImage{
+    .docImage {
         margin-top: 20px;
         display: flex;
         justify-content: center;
         align-items: end;
     }
 
-    .docImage img{
+    .docImage img {
         width: 312px;
         height: auto;
     }
 
 }
 
-@media (min-width : 750px){
+@media (min-width : 750px) {
 
     /* .mobileRootContainer{
         display: none;
     } */
 
-    .container{
+    .container {
         align-items: center;
     }
 
-    .docName{
+    .docName {
         text-align: center;
         font-size: 70px;
     }
 
-    .docQualiication{
+    .docQualiication {
         text-align: center;
         font-size: 40px;
     }
 
-    .box{
+    .box {
         display: flex;
         flex-direction: column;
         gap: 20px
     }
 
-    .expContainer img{
+    .expContainer img {
         width: 56px;
         height: auto;
     }
 
-    .docExperience{
+    .docExperience {
         font-size: 24px;
     }
 
-    .docImage img{
+    .docImage img {
         width: 490px;
     }
 
-    .buttonBg1{
+    .buttonBg1 {
         font-size: 18px;
         padding: 0;
         width: 250px;
         height: 50px;
     }
 
-    .buttonBg2{
+    .buttonBg2 {
         height: 50px;
         padding: 0;
         width: 50px;
     }
 }
 
-@media (min-width : 1000px){
+@media (min-width : 1000px) {
 
-    .container{
+    .container {
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -198,32 +198,32 @@
         /* padding: 0; */
     }
 
-    .docName{
+    .docName {
         font-size: 120px;
         position: relative;
         z-index: 2;
     }
 
-    .mobileRootContainer{
+    .mobileRootContainer {
         display: none;
     }
 
-    .desktopRootContainer{
+    .desktopRootContainer {
         position: relative;
     }
 
-    .docImage{
+    .docImage {
         position: absolute;
         z-index: 3;
         bottom: -0;
         margin: 0;
     }
 
-    .docImage img{
+    .docImage img {
         width: 600px;
     }
 
-    .contentContainer{
+    .contentContainer {
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -231,79 +231,84 @@
         gap: 40%;
         position: absolute;
         top: 0;
-        width : 99vw;
+        width: 99vw;
     }
 
-    .topSide{
+    .topSide {
         display: flex;
         justify-content: space-between;
         padding: 0 20px;
         /* margin-top: 25%; */
     }
 
-    .bottomSide{
+    .bottomSide {
         display: flex;
         justify-content: space-between;
-        padding: 0 35px;
+        padding: 0 18px;
     }
 
-    .docQualiication{
+    .docQualiication {
         text-align: left;
-        line-height: 80px;
+        line-height: initial;
         font-size: 25px;
+        width: 264px;
+        padding-bottom:30px;
     }
 
-    .buttonBg1{
+    .buttonBg1 {
         width: 220px;
         margin-left: 20px;
     }
-    
-    .desktopRootContainer{
+
+    .desktopRootContainer {
         display: block;
     }
 
 }
 
-@media (min-width : 1300px){
+@media (min-width : 1300px) {
 
-    .docName{
+    .docName {
         font-size: 175px
     }
 
-    .container{
+    .container {
         padding: 0;
     }
 
-    .docImage img{
+    .docImage img {
         width: auto;
         height: 85vh;
 
     }
 
-    .topSide{
+    .topSide {
         padding: 0 5%;
     }
 
-    .docQualiication{
+    .docQualiication {
         font-size: 36px;
     }
 }
 
-@media (min-width : 1400px){
+@media (min-width : 1400px) {
 
-    .topSide{
+    .topSide {
         padding: 0 10%;
     }
 
-    .bottomSide{
-        padding: 0 5%;
+    .bottomSide {
+        padding: 0 5% 0 1%;
     }
 
-    .docQualiication{
-        font-size: 21px;
+    .docQualiication {
+        font-size: 40px;
+        width: 32%;
+        line-height: normal;
+        padding-bottom: 20px;
     }
 
-    .buttonBg1{
+    .buttonBg1 {
         width: 250px;
         margin-left: 0;
     }
