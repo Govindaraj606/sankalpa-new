@@ -15,7 +15,7 @@ const Homepage = () => {
         knowMore.current?.scrollIntoView({ behavior: 'smooth' });
     };
 
-    
+
     // const showRef = useRef()
     const [isShow, setIsShow] = useState([false, false]);
 
@@ -105,7 +105,7 @@ const Homepage = () => {
 
                     <div className='content-para-part'>
                         <div className='content-part-1'>
-                            <div className='content-para'>Established in (kindly provide which year its started), Sankalpa Clinic is a dual-specialty clinic in RPC Layout, Vijayanagar, offering focused care in ENT and Dermatology. Built with the vision of delivering accessible and affordable healthcare, the clinic combines clinical expertise with a calm, supportive environment. Led by Dr. N.A. Jagadish (Senior Consultant Dermatologist) and Dr. Sridutt Shekar (Consultant ENT Surgeon), Sankalpa Clinic is known for its personalised approach, consistent outcomes and commitment to long-term well-being.</div>
+                            <div className='content-para'>Established in 2022, Sankalpa Clinic is a dual-specialty clinic in RPC Layout, Vijayanagar, offering focused care in ENT and Dermatology. Built with the vision of delivering accessible and affordable healthcare, the clinic combines clinical expertise with a calm, supportive environment. Led by Dr. N.A. Jagadish (Senior Consultant Dermatologist) and Dr. Sridutt Shekar (Consultant ENT Surgeon), Sankalpa Clinic is known for its personalised approach, consistent outcomes and commitment to long-term well-being.</div>
                             <div className='frame-imgs'>
                                 <div className='frame'>
                                     <img className='frame-img' src={assets.frame1} alt="" />
@@ -120,7 +120,7 @@ const Homepage = () => {
                                     <div className='frame-content'>
                                         <img className='frame-icons' src={assets.agreement} alt="" />
                                         <div className='number'>20+</div>
-                                        <div className='frame-title '>Years of Service</div>
+                                        <div className='frame-title'>Years of Experience</div>
                                     </div>
                                 </div>
                                 <div className='frame'>
