@@ -127,7 +127,7 @@ const Jagadish = () => {
             Qualiication: 'B.Sc, MBBS, D.V.D',
             year: '41 Years of Experience',
             Experience: 'Senior Consultant Dermatologist',
-            img: ""
+            img: assets.drImage1
         }
     ]
 

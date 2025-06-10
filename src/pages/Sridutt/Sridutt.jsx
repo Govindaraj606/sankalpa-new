@@ -169,7 +169,7 @@ const Sridutt = () => {
             Qualiication: 'MBBS, MS - ENT & Head and Neck Surgery',
             year: '10+ Years of Experience',
             Experience: 'Consultant ENT Surgeon',
-            img: ""
+            img: assets.drImage2
         }
     ]
 

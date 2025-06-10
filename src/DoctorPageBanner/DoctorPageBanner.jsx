@@ -3,6 +3,7 @@ import style from './DoctorPageBanner.module.css'
 import { assets } from '../assets/assets'
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { details } from 'framer-motion/client';
 
 const DoctorPageBanner = ({ detail }) => {
     return (
@@ -38,7 +39,7 @@ const DoctorPageBanner = ({ detail }) => {
                     </div>
 
                     <div className={style.docImage}>
-                        <img src={assets.drImage} alt="" />
+                        <img src={detail.img} alt="" />
                     </div>
 
                 </div>
@@ -51,7 +52,7 @@ const DoctorPageBanner = ({ detail }) => {
                 <div className={style.container}>
                     <div className={style.docName}>{detail.name}</div>
                     <div className={style.docImage}>
-                        <img src={assets.drImage} alt="" />
+                        <img src={detail.img} alt="" />
                     </div>
                 </div>
 

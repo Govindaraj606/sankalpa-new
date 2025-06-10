@@ -184,7 +184,7 @@ const Homepage = () => {
                 <div className="doctor-heading">Our Expert Doctors</div>
                 <div className='doctor-content' >
                     <div className='doctor-card'>
-                        <img className="doctor-img-card" src={assets.cardimg} alt="" />
+                        <img className="doctor-img-card" src={assets.cardimg1} alt="" />
                         <div className='doctor-deatils'>
                             <div className="doctor-name">Dr. N.A. Jagadish </div>
                             <div className='degree'>B.Sc, MBBS, D.V.D</div>
@@ -195,7 +195,7 @@ const Homepage = () => {
                     </div>
 
                     <div className='doctor-card'>
-                        <img className="doctor-img-card" src={assets.cardimg} alt="" />
+                        <img className="doctor-img-card" src={assets.cardimg2} alt="" />
                         <div className='doctor-deatils'>
                             <div className="doctor-name">Dr. Sridutt Shekar </div>
                             <div className='degree'>MBBS, MS - ENT & Head and Neck Surgery</div>
@@ -214,7 +214,7 @@ const Homepage = () => {
                 <div className='mobile-doctor-content' >
                     <div className='mobile-card'>
                         <div className='mobile-doctor-card' onClick={() => showCard(0)} style={{ height: isShow[0] ? "500px" : "280px" }} >
-                            <img className="mobile-doctor-img-card" src={assets.cardimg} alt="" />
+                            <img className="mobile-doctor-img-card" src={assets.cardimg1} alt="" />
                             <div className='mobile-doctor-deatils'>
                                 <div className="mobile-doctor-name">Dr. N.A. Jagadish </div>
                                 <div className='doctor-degree doctor-para'>B.Sc, MBBS, D.V.D</div>
@@ -225,7 +225,7 @@ const Homepage = () => {
                         </div>
 
                         <div className='mobile-doctor-card' onClick={() => showCard(1)} style={{ height: isShow[1] ? "500px" : "280px" }}>
-                            <img className="mobile-doctor-img-card" src={assets.cardimg} alt="" />
+                            <img className="mobile-doctor-img-card" src={assets.cardimg2} alt="" />
                             <div className='mobile-doctor-deatils'>
                                 <div className="mobile-doctor-name">Dr. Sridutt Shekar </div>
                                 <div className='doctor-degree doctor-para'>MBBS, MS - ENT & Head and Neck Surgery</div>

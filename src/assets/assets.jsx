@@ -48,7 +48,8 @@ import hairtreatment from '../assets/hair-treatment.svg'
 import hairwhite from '../assets/hair-treatment-white.svg'
 import ear from "../assets/ear.svg"
 import earwhite from '../assets/ear-white.svg'
-import cardimg from '../assets/card-img.svg'
+import cardimg1 from '../assets/card-img-1.png'
+import cardimg2 from '../assets/card-img-2.png'
 import mapaddressbook from '../assets/map-address-book.svg'
 import mapmail from "../assets/map-mail.svg"
 import maprounded from '../assets/map-rounded.svg'
@@ -57,7 +58,8 @@ import mapcall from '../assets/map-call.svg'
 import navbar from '../assets/navbar.svg'
 import dot1 from "../assets/dot.png"
 
-import drImage from '../assets/drImage.png'
+import drImage1 from '../assets/drImage1.png'
+import drImage2 from '../assets/drImage2.png'
 import consultantIcon from '../assets/consultantIcon.png'
 import experienceIcon from '../assets/expIcon.png'
 import allergy from '../assets/allergy.svg'
@@ -170,7 +172,8 @@ export const assets = {
     hairwhite,
     ear,
     earwhite,
-    cardimg,
+    cardimg1,
+    cardimg2,
     mapaddressbook,
     mapmail,
     maprounded,
@@ -178,7 +181,8 @@ export const assets = {
     mapcall,
     navbar,
     dot1,
-    drImage,
+    drImage1,
+    drImage2,
     consultantIcon,
     experienceIcon,
     allergy,
