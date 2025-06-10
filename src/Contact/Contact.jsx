@@ -1,10 +1,11 @@
-import React,{useEffect ,useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './Contact.module.css'
 import { assets } from '../assets/assets'
 import { useForm } from "react-hook-form";
-import {toast , ToastContainer} from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import emailjs from "@emailjs/browser"
-import {init} from "@emailjs/browser"
+import { init } from "@emailjs/browser"
+import { style } from 'framer-motion/client';
 
 const Contact = () => {
 
@@ -21,7 +22,7 @@ const Contact = () => {
 
     useEffect(() => {
         init("f7E7AKcXg_PXLji7T"); // Initialize once
-    },[]);
+    }, []);
 
     const onSubmit = (data) => {
         setIsSubmitting(true);
@@ -44,31 +45,33 @@ const Contact = () => {
         <div className={styles.maindiv}>
             <div className={styles.full}>
                 <div className={styles.card_1}>
-                    <div className={styles.card1_heading}>Clinic Address</div>
-                    <div className={styles.flex}>
-                        <img src={assets.mapaddressbook} alt="" />
-                        <div className={styles.para}>15, RPC Layout, Hoshalli Extension, Stage 1, Vijayanagar, Bengaluru, Karnataka 560040</div>
-                    </div>
+                    <div className={styles.info}>
+                        <div className={styles.card1_heading}>Clinic Address</div>
+                        <div className={styles.flex}>
+                            <img src={assets.mapaddressbook} alt="" />
+                            <div className={styles.para}>15, RPC Layout, Hoshalli Extension, Stage 1, Vijayanagar, Bengaluru, Karnataka 560040</div>
+                        </div>
 
-                    <div className={styles.flex}>
-                        <img src={assets.mapcall} alt="" />
-                        <a href="tel:099459 94257 / 9735121129"><div className={styles.para}>099459 94257 / 9735121129</div></a>
-                    </div>
-                    <div className={styles.flex}>
-                        <img src={assets.mapmail} alt="" />
-                        <a href="mailto:sriduttshekar@gmail.com"><div className={styles.para}>sriduttshekar@gmail.com</div></a>
-                    </div>
-                    <div className={styles.card1_heading}>Timings</div>
-                    <div className={styles.flex}>
-                        <img src={assets.maphair} alt="" />
-                        <div className={styles.para}>Dermatology Consultation: Monday to Saturday: 10 AM - 4 PM</div>
-                    </div>
-                    <div className={styles.flex}>
-                        <img src={assets.maprounded} alt="" />
-                        <div className={styles.para}>ENT Consultation: Monday to Saturday: 4 PM - 7 PM</div>
-                    </div>
-                    <div className={styles.m_l} >
-                        <div className={styles.para}>Sunday: Closed</div>
+                        <div className={styles.flex}>
+                            <img src={assets.mapcall} alt="" />
+                            <a href="tel:099459 94257 / 9735121129"><div className={styles.para}>099459 94257 / 9735121129</div></a>
+                        </div>
+                        <div className={styles.flex}>
+                            <img src={assets.mapmail} alt="" />
+                            <a href="mailto:sriduttshekar@gmail.com"><div className={styles.para}>sriduttshekar@gmail.com</div></a>
+                        </div>
+                        <div className={styles.card1_heading}>Timings</div>
+                        <div className={styles.flex}>
+                            <img src={assets.maphair} alt="" />
+                            <div className={styles.para}>Dermatology Consultation: Monday to Saturday: 10 AM - 4 PM</div>
+                        </div>
+                        <div className={styles.flex}>
+                            <img src={assets.maprounded} alt="" />
+                            <div className={styles.para}>ENT Consultation: Monday to Saturday: 4 PM - 7 PM</div>
+                        </div>
+                        <div className={styles.m_l} >
+                            <div className={styles.para}>Sunday: Closed</div>
+                        </div>
                     </div>
                 </div>
 
@@ -116,7 +119,7 @@ const Contact = () => {
                 </iframe>
             </div>
             <div>
-                <ToastContainer/>
+                <ToastContainer />
             </div>
         </div>
     )

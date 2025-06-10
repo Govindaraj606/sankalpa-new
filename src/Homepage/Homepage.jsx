@@ -14,6 +14,8 @@ const Homepage = () => {
     const scrollToForm = () => {
         knowMore.current?.scrollIntoView({ behavior: 'smooth' });
     };
+
+    
     // const showRef = useRef()
     const [isShow, setIsShow] = useState([false, false]);
 
@@ -23,6 +25,29 @@ const Homepage = () => {
         setIsShow(newShow);
         // console.log(isShow)
     };
+
+
+    // frame card Animation
+    const imgs = [
+        assets.repairing,
+        assets.framhead
+    ]
+
+    const [index, setIndex] = useState(0);
+    const [fade, setFade] = useState(true);
+
+    useEffect(()=>{
+        const interval = setInterval(()=>{
+            setFade(false);
+            setTimeout(()=>{
+                setIndex(prev =>(prev + 1) % imgs.length);
+                setFade(true);
+            },400)
+        },2000)
+
+        return()=>clearInterval(interval);
+    },[])
+
 
 
 
@@ -101,8 +126,7 @@ const Homepage = () => {
                                 <div className='frame'>
                                     <img className='frame-img' src={assets.frame3} alt="" />
                                     <div className='frame-content'>
-                                        <img className='repairing' src={assets.repairing} alt="" />
-                                        <img className='repairing' src={assets.framhead} alt="" />
+                                        <img className={`repairing ${fade ? "fade-in" : "fade-out"}`}  src={imgs[index]} alt="" />
                                         <div className='number'>2</div>
                                         <div className='frame-title '>Specialties</div>
                                     </div>

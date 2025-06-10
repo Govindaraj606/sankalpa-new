@@ -598,6 +598,14 @@
 
 input {
     padding: 10px;
+    font-size: 16px;
+    color: #000;
+}
+
+.input-name,
+.input-contact,
+.msg {
+    color: #000;
 }
 
 textarea {
@@ -682,9 +690,8 @@ form {
     left: 250px;
     color: #FFFAFA;
     font-family: outfit;
-    text-transform: capitalize;
     padding: 20px;
-    width: 424px;
+    width: 381px;
     height: 353px;
     line-height: 70px;
     display: flex;
@@ -962,7 +969,7 @@ a {
         top: 175px;
         padding: 0px;
         padding-left: 10px;
-        width: 400px;
+        width: 360px;
     }
 
     .info-para {
@@ -1266,7 +1273,7 @@ a {
 
 /* Mobile */
 
-@media(max-width:400px) {
+@media(max-width:767px) {
 
     .logo {
         display: none;
@@ -1524,7 +1531,7 @@ a {
     }
 
     .info {
-        width: 250px;
+        width: 231px;
         position: absolute;
         top: 150px;
         left: 47px;
@@ -1536,7 +1543,7 @@ a {
     }
 
     .info-para {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 20px;
         padding-left: 0px;
     }
@@ -1562,8 +1569,6 @@ a {
     .form-btn {
         width: 70%;
         font-size: 17px;
-        /* margin-left: 25px; */
-
     }
 
     .form-sub-para {
@@ -1592,7 +1597,6 @@ a {
     form {
         display: flex;
         flex-direction: column;
-        /* margin-left: 20px; */
     }
 
     .icons {
@@ -1664,110 +1668,4 @@ a {
     .info-part-1 {
         top: -80px;
     }
-}
-
-@media(max-width:767px){
-    .banner-img{
-        display: none;
-    }
-    .banner-resp {
-        display: block;
-        height: 73vh;
-        width: 100vw;
-        position: absolute;
-        top: 70px;
-    }
-
-    .content-part{
-        margin:0px 30px;
-    }
-
-     .heading-part {
-        position: relative;
-        top: 0px;
-        text-align: center;
-    }
-
-    .btn-2{
-        width: 130px;
-    }
-    .sub-headding{
-        width: 298px;
-    }
-
-    .main-headding{
-        width: 370px;
-    }
-
-    .doctorimgresp {
-        display: block;
-        position: relative;
-        width: auto;
-        height: 43vh;
-        right: -51px;
-        top: -51px;
-    }
-
-    .frame-imgs {
-        gap: 5px;
-        padding: 5px;
-        display: flex;
-        justify-content: center;
-        margin-left: 0px;
-    }
-    .frame-img{
-        width: 120px;
-    }
-    .content-part-1{
-        align-items: center;
-    }
-
-     .doctor-heading {
-        color: #135673;
-        font-family: "Train One";
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 56px;
-        margin-top: 0px;
-        /* 175% */
-    }
-
-     .info-part {
-        display: flex;
-        flex-direction: column;
-        padding: 0px 15px;
-        flex-shrink: 0;
-        top: 116px;
-    }
-
-    .info-part-1{
-        top: -112px;
-    }
-
-     .ractangle-img {
-        display: none;
-
-    }
-    .box{
-        display: none;
-    }
-
-    .ractangle-resp {
-        display: block;
-        width: 100vw;
-        height: 80vh;
-        margin-top: 80px;
-    }
-     .info {
-        width: 335px;
-        position: absolute;
-        top: 230px;
-        left: 47px;
-        line-height: normal;
-    }
-
-    
-
-    
 }

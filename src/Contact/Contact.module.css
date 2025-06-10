@@ -17,7 +17,7 @@
     flex-shrink: 0;
     border-radius: 50px;
     background: #FFFFFF;
-    padding: 60px 40px;
+    padding: 40px;
     position: absolute;
     left: 150px;
     /* margin-top: 20px; */
@@ -110,6 +110,7 @@ input {
     border: none;
     border-bottom: 2px solid #D4CDCD;
     width: 530px;
+    color: white;
 }
 
 textarea {
@@ -117,6 +118,8 @@ textarea {
     border: none;
     border-bottom: 2px solid #D4CDCD;
     width: 530px;
+    font-size: 16px;
+    color: white;
 }
 
 
@@ -139,6 +142,7 @@ textarea::placeholder {
 input:focus-visible {
     outline: none;
     color: white;
+
 }
 
 textarea:focus-visible {
@@ -207,9 +211,13 @@ textarea {
     margin-left: 30px;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
+}
+
+.info {
+    width: 92%;
 }
 
 
@@ -221,9 +229,10 @@ a{
     }
 
     .card_1 {
-        width: 309px;
+        width: 335px;
         height: 531px;
         left: 50px;
+        padding: 20px;
     }
 
     input {
@@ -251,16 +260,21 @@ a{
     iframe {
         width: 800px;
     }
-    .form_part{
+
+    .form_part {
         align-items: start;
         margin-left: 150px;
-        
     }
 
     .map {
         padding-bottom: 0px;
         margin-top: 50px;
     }
+
+    .info {
+        width: 307px;
+    }
+
 }
 
 /* tab */
@@ -281,10 +295,10 @@ a{
         width: 700px;
     }
 
-    .form_part{
-        align-items:start;
+    .form_part {
+        align-items: start;
         margin-left: 150px;
-        
+
     }
 
     .full {
@@ -299,6 +313,9 @@ a{
     .map {
         padding-bottom: 50px;
     }
+    .info{
+    width: 92%;
+}
 }
 
 
@@ -315,6 +332,7 @@ a{
         left: 0px;
         position: relative;
         top: 20px;
+        padding: 20px;
     }
 
     .card_2 {
@@ -363,10 +381,10 @@ a{
 
     }
 
-    .form_part{
+    .form_part {
         align-items: center;
-        margin-left:0px;
-        
+        margin-left: 0px;
+
     }
 
 
@@ -395,6 +413,10 @@ a{
     .map {
         padding-bottom: 50px;
     }
+    .info{
+    width: 240px;
+
+}
 
 
 }
