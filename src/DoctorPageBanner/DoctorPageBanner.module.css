@@ -75,6 +75,7 @@
         border-radius: 128px;
         background: transparent;
         margin-top: 15px;
+        margin-bottom: 20px;
     }
 
     .buttonContainer {
@@ -244,7 +245,7 @@
     .bottomSide {
         display: flex;
         justify-content: space-between;
-        padding: 0 18px;
+        padding: 0 20px 0 30px;
     }
 
     .docQualiication {
@@ -298,12 +299,12 @@
     }
 
     .bottomSide {
-        padding: 0 5% 0 1%;
+        padding: 0 5% 0 5%;
     }
 
     .docQualiication {
-        font-size: 40px;
-        width: 32%;
+        font-size: 32px;
+        width: 27%;
         line-height: normal;
         padding-bottom: 20px;
     }
