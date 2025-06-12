@@ -6,17 +6,18 @@ import Footer from '../../footer/Footer'
 import { Link } from 'react-router-dom'
 import Entpart from '../../ent-part/ENTpart.jsx'
 import DoctorPageBanner from '../../DoctorPageBanner/DoctorPageBanner'
+import { Helmet } from 'react-helmet';
 
 
 
-const Jagadish = () => {    
+const Jagadish = () => {
 
     const hoverRef = useRef([])
     const [isHovered, setIsHovered] = useState([false])
 
 
-    const hoverEffect =(index, isHover)=>{
-        const newisHover =[...isHovered];
+    const hoverEffect = (index, isHover) => {
+        const newisHover = [...isHovered];
         newisHover[index] = isHover;
         setIsHovered(newisHover)
 
@@ -67,56 +68,65 @@ const Jagadish = () => {
         {
             img1: assets.dryskin,
             img2: assets.dryskincolor,
+            alt: "best dermatologist in vijay nagar bangalore",
             title: "Acne & Acne Scars",
             para: "Acne is a common skin condition that develops when hair follicles become clogged with oil and dead skin cells. It often appears on the face, back and shoulders, especially during adolescence and young adulthood. While acne can range from mild to severe, its aftermath - scarring - can be equally distressing. These scars may appear as dark spots, pits or raised areas and often take a toll on emotional well-being as much as physical appearance."
         },
         {
             img1: assets.handfoot,
             img2: assets.handfootcolor,
+            alt: "skin specialist near me vijay nagar",
             title: "Skin Allergies & Rashes",
             para: "Skin allergies are hypersensitive reactions to allergens such as pollen, food, fabrics, or skincare products. They commonly present as rashes, itching, redness, or swelling. While some rashes are acute and short-lived, others may be chronic and linked to underlying conditions like eczema or contact dermatitis. Identifying triggers is key to managing these conditions effectively."
         },
         {
             img1: assets.hand,
             img2: assets.handcolor,
+            alt: "hair fall treatment in vijay nagar",
             title: "Fungal & Bacterial Infections",
             para: "Fungal and bacterial infections are among the most frequent causes of skin discomfort. Fungal infections like ringworm or candidiasis thrive in warm, moist areas and often result in itchy, red patches. Bacterial infections, such as impetigo or folliculitis, can cause painful boils or crusted sores. These infections can spread quickly if untreated and often require both topical and systemic interventions."
         },
         {
             img1: assets.skintone,
             img2: assets.skintonecolor,
+            alt: "pigmentation treatment clinic vijay nagar",
             title: "Pigmentation & Uneven Skin Tone",
             para: "Pigmentation disorders cause the skin to appear darker or lighter than usual, or blotchy. Common forms include melasma, sun spots and post-inflammatory hyperpigmentation. These changes may result from sun exposure, hormonal changes, or skin trauma. Though generally harmless, they can be aesthetically concerning and are often persistent without proper care."
         },
         {
             img1: assets.hairloss,
             img2: assets.hairlosscolor,
+            alt: "laser treatment for face in bangalore",
             title: "Hair Fall & Dandruff",
             para: "Hair fall can be triggered by genetics, stress, hormonal imbalances, or nutritional deficiencies. It may present as gradual thinning or sudden shedding. Dandruff, on the other hand, is often caused by scalp inflammation or fungal overgrowth, leading to flaking and itchiness. Both conditions are not only visible concerns but also signal underlying scalp or systemic issues."
         },
         {
             img1: assets.allergy,
             img2: assets.allergycolor,
+            alt: "pimple removal treatment vijay nagar",
             title: "Psoriasis, Eczema, Urticaria",
             para: "These chronic skin disorders often result in inflammation, itching and recurring flare-ups. Psoriasis is an autoimmune condition characterized by thick, scaly patches. Eczema, or atopic dermatitis, leads to dry, cracked and irritated skin, especially in children. Urticaria (hives) causes red, itchy welts that appear suddenly. Though different in cause, all three can significantly impact daily life and require long-term management."
         },
         {
             img1: assets.irritant,
             img2: assets.irritantcolor,
+            alt: "skin whitening treatment in vijay nagar",
             title: "Warts, Moles & Skin Tags",
             para: "These are benign skin growths that appear for various reasons. Warts are caused by the human papillomavirus (HPV), while moles are pigment-producing cells grouped together. Skin tags are soft, flesh-colored growths that usually develop in skin folds. While harmless, their location or size can make them bothersome or aesthetically undesirable."
         },
         {
             img1: assets.nail,
             img2: assets.nailcolor,
+            alt: "best dandruff treatment near me",
             title: "Nail Disorders",
             para: "Nail disorders may reflect local trauma or systemic health conditions. Common issues include fungal infections, brittle or thickened nails, discoloration and ingrown nails. Though often dismissed as cosmetic, persistent nail changes can signal deeper health concerns and may affect functionality and comfort."
         },
         {
             img1: assets.protection,
             img2: assets.protectioncolor,
+            alt: "skin tag removal clinic in vijay nagar",
             title: "Anti-Ageing & Skin Rejuvenation",
-            para: ">As we age, the skin undergoes structural changes - loss of collagen, elasticity and hydration. This leads to fine lines, dullness and sagging. Rejuvenation focuses on improving texture, tone and firmness through supportive skincare and clinical strategies that enhance the skin’s natural renewal processes over time."
+            para: "As we age, the skin undergoes structural changes - loss of collagen, elasticity and hydration. This leads to fine lines, dullness and sagging. Rejuvenation focuses on improving texture, tone and firmness through supportive skincare and clinical strategies that enhance the skin’s natural renewal processes over time."
         },
 
     ]
@@ -127,7 +137,8 @@ const Jagadish = () => {
             Qualiication: 'B.Sc, MBBS, D.V.D',
             year: '41 Years of Experience',
             Experience: 'Senior Consultant Dermatologist',
-            img: assets.drImage1
+            img: assets.drImage1,
+            alt: "best dermatologist in vijay nagar bangalore"
         }
     ]
 
@@ -135,6 +146,15 @@ const Jagadish = () => {
     return (
         <div >
             <div className={styles.full}>
+
+                <Helmet>
+                    <title>Dr. Jagadish – Senior Dermatologist in Vijayanagar</title>
+                    <meta name="description" content="Experienced dermatologist for acne, hair fall, skin allergies & more. Book a consultation with Dr. Jagadish." />
+                    <meta
+                        name="keywords"
+                        content="dermatology near me, skin specialist near me, skin care, hair loss treatment, hair growth, skin rash, hair treatment, dandruff treatment, hair fall treatment, clear skin, grey hair, pigmentation, dermatologist, skin tag removal, skin whitening treatment, laser treatment for face, pigmentation on face, skin pigmentation, pimple removal, skin fairness treatment, face tan removal, best dermatologist near me, pimple treatment, stretch mark treatment, pigmentation treatment, best dermatologist in vijay nagar bangalore, skin specialist near me vijay nagar, hair fall treatment in vijay nagar, pigmentation treatment clinic vijay nagar, laser treatment for face in bangalore, pimple removal treatment vijay nagar, skin whitening treatment in vijay nagar, best dandruff treatment near me, skin tag removal clinic in vijay nagar, face tan removal clinic bangalore, lip pigmentation treatment vijay nagar, skin treatment near vijay nagar"/>
+
+                </Helmet>
                 <div>
                     <DoctorPageBanner detail={details[0]} />
                 </div>
@@ -152,11 +172,11 @@ const Jagadish = () => {
                                 {
                                     doctorcards.map((card, index) => (
                                         <div className={styles.card1} key={index}
-                                        ref={(el) => (hoverRef.current[index] = el)}
-                                        onMouseEnter={() => hoverEffect(index, true)}
-                                        onMouseLeave={() => hoverEffect(index, false)}
-                                            >
-                                           <img src={isHovered[index] ? card.img1 : card.img2} alt="" />
+                                            ref={(el) => (hoverRef.current[index] = el)}
+                                            onMouseEnter={() => hoverEffect(index, true)}
+                                            onMouseLeave={() => hoverEffect(index, false)}
+                                        >
+                                            <img src={isHovered[index] ? card.img1 : card.img2} alt={card.alt} />
                                             <div className={styles.sub_h}>{card.title}</div>
                                             <div className={styles.sub_p}>{card.para}</div>
                                         </div>

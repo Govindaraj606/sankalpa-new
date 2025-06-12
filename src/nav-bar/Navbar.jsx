@@ -29,12 +29,14 @@ const Navbar = () => {
             title: 'Senior Consultant Dermatologist',
             img: assets.doctorimg,
             link: '/doctor/dr-jagadish',
+            alt:"best doctor for strep throat in vijay nagar"
         },
         {
             name: 'Dr. Sridutt Shekar',
             title: 'Consultant ENT Surgeon',
             img: assets.medical,
             link: '/doctor/dr-sridutt',
+            alt:"best ent specialist for ear care in bangalore"
         },
     ];
 
@@ -43,7 +45,7 @@ const Navbar = () => {
         <div>
             <div className={styles.nav_bar}>
                 <div className=''>
-                    <img className={styles.logo} src={assets.logo} alt="" />
+                    <img className={styles.logo} src={assets.logo} alt="best tonsillitis treatment doctor in vijay nagar" />
                 </div>
 
                 <div className={styles.list}>
@@ -73,12 +75,12 @@ const Navbar = () => {
             {/* mobile Menu */}
             <div className={styles.navbar_res}>
                 <div className={styles.navbar_header}>
-                    <img className={styles.logo_resp} src={assets.logoresp} alt="" />
+                    <img className={styles.logo_resp} src={assets.logoresp} alt="best ear doctor for hearing loss near me" />
                     <div className={styles.navbar_img} onClick={() => {
                         setIsOpen(!isOpen)
                         // console.log(isOpen)
                     }}>
-                        <img src={assets.navbar} alt="" />
+                        <img src={assets.navbar} alt="best ent allergy clinic in vijay nagar" />
                     </div>
                 </div>
                 <div

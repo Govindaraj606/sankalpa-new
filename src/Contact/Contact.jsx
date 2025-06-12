@@ -6,6 +6,7 @@ import { toast, ToastContainer } from "react-toastify";
 import emailjs from "@emailjs/browser"
 import { init } from "@emailjs/browser"
 import { style } from 'framer-motion/client';
+import { Helmet } from 'react-helmet';
 
 const Contact = () => {
 
@@ -43,30 +44,42 @@ const Contact = () => {
 
     return (
         <div className={styles.maindiv}>
+
+
+            <Helmet>
+                <title>Contact Sankalpa Clinic – Vijayanagar, Bangalore</title>
+                <meta name="description" content="Book an appointment or reach out for ENT or skin care services at Sankalpa Clinic in RPC Layout, Vijayanagar." />
+                <meta
+                    name="keywords"
+                    content="ḍear cleaning near me, strep throat, ear cleaning, ear doctor, sore throat treatment, itchy ears, severe sore throat, ear care, dry throat, ear bone, grey hair, pigmentation, dermatologist, skin tag removal, skin whitening treatment, laser treatment for face, pigmentation on face, skin pigmentation, pimple removal, skin fairness treatment, face tan removal, best dermatologist near me, Sankalpa Clinic dermatology vijay nagar, Sankalpa Clinic skin specialist bangalore, hair loss treatment at Sankalpa Clinic, pimple treatment Sankalpa Clinic, laser treatment for face Sankalpa Clinic, book appointment Sankalpa Clinic dermatologist, Sankalpa Clinic for pigmentation treatment, skin whitening Sankalpa Clinic vijay nagar, Sankalpa Clinic reviews, best ear doctor in vijay nagar, best clinic for ear cleaning near me, best doctor for tonsillectomy in bangalore, best severe sore throat treatment vijay nagar, best clinic for throat stones removal near me, best ent doctor for polyps in nose vijay nagar, best tonsillitis treatment doctor in vijay nagar, best ear doctor for hearing loss near me, best ent allergy clinic in vijay nagar, best doctor for strep throat in vijay nagar" />
+
+            </Helmet>
+
+
             <div className={styles.full}>
                 <div className={styles.card_1}>
                     <div className={styles.info}>
                         <div className={styles.card1_heading}>Clinic Address</div>
                         <div className={styles.flex}>
-                            <img src={assets.mapaddressbook} alt="" />
+                            <img src={assets.mapaddressbook} alt="ear cleaning near vijay nagar bangalore" />
                             <div className={styles.para}>15, RPC Layout, Hoshalli Extension, Stage 1, Vijayanagar, Bengaluru, Karnataka 560040</div>
                         </div>
 
                         <div className={styles.flex}>
-                            <img src={assets.mapcall} alt="" />
+                            <img src={assets.mapcall} alt="ent clinic in vijay nagar bangalore" />
                             <a href="tel:099459 94257 / 9735121129"><div className={styles.para}>099459 94257 / 9735121129</div></a>
                         </div>
                         <div className={styles.flex}>
-                            <img src={assets.mapmail} alt="" />
+                            <img src={assets.mapmail} alt="best ent allergy clinic in vijay nagar" />
                             <a href="mailto:sriduttshekar@gmail.com"><div className={styles.para}>sriduttshekar@gmail.com</div></a>
                         </div>
                         <div className={styles.card1_heading}>Timings</div>
                         <div className={styles.flex}>
-                            <img src={assets.maphair} alt="" />
+                            <img src={assets.maphair} alt="best doctor for strep throat in vijay nagar" />
                             <div className={styles.para}>Dermatology Consultation: Monday to Saturday: 10 AM - 4 PM</div>
                         </div>
                         <div className={styles.flex}>
-                            <img src={assets.maprounded} alt="" />
+                            <img src={assets.maprounded} alt="best ent specialist for ear care in bangalore" />
                             <div className={styles.para}>ENT Consultation: Monday to Saturday: 4 PM - 7 PM</div>
                         </div>
                         <div className={styles.m_l} >

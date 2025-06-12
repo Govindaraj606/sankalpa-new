@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Sridutt from './pages/Sridutt/Sridutt'
 import Jagadish from './pages/Jagadish/Jagadish'
 import Contact from './Contact/Contact'
-import CardAnimation from './pages/CardAnimation/CardAnimation'
 import Entpart from './ent-part/ENTpart'
 
 

@@ -18,12 +18,12 @@ const DoctorPageBanner = ({ detail }) => {
 
                     <div className={style.box}>
                         <div className={style.expContainer}>
-                            <img src={assets.consultantIcon} alt="" />
+                            <img src={assets.consultantIcon} alt={detail.alt} />
                             <div className={style.docExperience}>{detail.Experience}</div>
                         </div>
 
                         <div className={style.expContainer}>
-                            <img src={assets.experienceIcon} alt="" />
+                            <img src={assets.experienceIcon} alt={detail.alt} />
                             <div className={style.docExperience}>{detail.year}</div>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ const DoctorPageBanner = ({ detail }) => {
                     </div>
 
                     <div className={style.docImage}>
-                        <img src={detail.img} alt="" />
+                        <img src={detail.img} alt={detail.alt} />
                     </div>
 
                 </div>
@@ -52,7 +52,7 @@ const DoctorPageBanner = ({ detail }) => {
                 <div className={style.container}>
                     <div className={style.docName}>{detail.name}</div>
                     <div className={style.docImage}>
-                        <img src={detail.img} alt="" />
+                        <img src={detail.img} alt={detail.alt} />
                     </div>
                 </div>
 
@@ -61,12 +61,12 @@ const DoctorPageBanner = ({ detail }) => {
                     {/* top side */}
                     <div className={style.topSide}>
                         <div className={style.expContainer}>
-                            <img src={assets.consultantIcon} alt="" />
+                            <img src={assets.consultantIcon} alt={detail.alt} />
                             <div className={style.docExperience}>{detail.Experience}</div>
                         </div>
 
                         <div className={style.expContainer}>
-                            <img src={assets.experienceIcon} alt="" />
+                            <img src={assets.experienceIcon} alt={detail.alt}/>
                             <div className={style.docExperience}>{detail.year}</div>
                         </div>
                     </div>

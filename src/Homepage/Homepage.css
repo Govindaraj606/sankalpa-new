@@ -21,7 +21,7 @@
 
 .banner-img {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     position: absolute;
 }
 
@@ -33,12 +33,13 @@
     position: relative;
     display: flex;
     align-items: center;
-    top: 0px;
+    justify-content: center;
+    top: 100px;
     gap: 150px;
 }
 
 .main-headding {
-    width: 700px;
+    /* width: 700px; */
     color: #FFF;
     font-family: "Train One";
     font-size: 38px;
@@ -53,6 +54,7 @@
     font-size: 48px;
     font-weight: 800;
     padding-top: 20px;
+    text-align: center;
 }
 
 .btn-part {
@@ -95,15 +97,19 @@
 
 .heading-part {
     position: relative;
-    left: 100px;
-    top: 0px;
+    /* left: 100px; */
+    /* top: 0px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.doctor-img {
+/* .doctor-img {
     position: relative;
     top: 50px;
     right: 50px;
-}
+} */
+
 
 .content-part {
     margin: 100px;
@@ -112,7 +118,7 @@
 
 .content-heading-part {
     position: relative;
-    top: 140px;
+    top: 267px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,7 +190,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding:0px 5px;
+    padding: 0px 5px;
 }
 
 .content-para {
@@ -199,7 +205,7 @@
 
 .services-part {
     position: relative;
-    top: 60px;
+    top: 170px;
     margin: 50px;
     padding-top: 50px;
 }
@@ -323,7 +329,7 @@
 
 /* doctor part */
 .doctors-part {
-    margin-top: 100px;
+    margin-top: 210px;
 }
 
 .doctor-heading {
@@ -872,6 +878,12 @@ a {
         display: block;
     }
 
+    .banner-img {
+        width: 100%;
+        height: 80vh;
+        position: absolute;
+    }
+
 
     .doctorimg {
         display: block;
@@ -896,14 +908,14 @@ a {
     }
 
     .heading-part {
-        left: 40px;
-        top: 100px;
+        /* left: 40px; */
+        top: 60px;
 
     }
 
     .main-headding {
         font-size: 28px;
-        width: 600px;
+        /* width: 600px; */
     }
 
     .sub-headding {
@@ -925,6 +937,7 @@ a {
 
     .card {
         width: 450px;
+        padding: 30px 40px 25px 39px;
     }
 
     .card-1 {
@@ -950,7 +963,8 @@ a {
 
     .doctors-part {
         position: relative;
-        top: 150px;
+        top: 170px;
+        margin-top: 0px;
     }
 
     .mobile-doctor-content {
@@ -963,6 +977,7 @@ a {
         margin-left: 0px;
         position: relative;
         top: 200px;
+        margin-top: 0px;
     }
 
     .info {
@@ -993,11 +1008,11 @@ a {
     }
 
     .content-heading-part {
-        top: 200px;
+        top: 250px;
     }
 
     .services-part {
-        top: 150px;
+        top: 180px;
     }
 
     .footer {
@@ -1012,7 +1027,7 @@ a {
 
     .frame-img {
         width: 145px;
-        height: 200px;
+        height: 180px;
     }
 
     .underline {
@@ -1051,7 +1066,7 @@ a {
 
     .banner-img {
         width: 100%;
-        height: 111vh;
+        height: 55vh;
         position: absolute;
     }
 
@@ -1066,7 +1081,7 @@ a {
     }
 
     .heading-part {
-        left: 0px;
+        /* left: 0px; */
         top: 30px;
         display: flex;
         flex-direction: column;
@@ -1080,7 +1095,7 @@ a {
 
     .main-headding {
         font-size: 20px;
-        width: 600px;
+        /* width: 600px; */
         text-align: center;
     }
 
@@ -1090,7 +1105,7 @@ a {
     }
 
     .content-heading-part {
-        top: 20px;
+        top: 105px;
     }
 
     .frame-imgs {
@@ -1111,7 +1126,7 @@ a {
     .content-para-part {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 30px;
         margin-top: 0px;
     }
 
@@ -1119,6 +1134,8 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 0px;
+        margin-top: 0px;
     }
 
     .doctor-content {
@@ -1151,7 +1168,7 @@ a {
     }
 
     .services-part {
-        top: 20px;
+        top: 70px;
         padding-top: 0px;
     }
 
@@ -1292,7 +1309,7 @@ a {
 
     .banner-resp {
         display: block;
-        height: 83vh;
+        height: 60vh;
         width: 100vw;
         position: absolute;
         top: 70px;
@@ -1406,7 +1423,7 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        top: 40px;
+        top: 150px;
     }
 
     .content-main-heading {

@@ -6,6 +6,7 @@ import Footer from '../../footer/Footer';
 import { Link } from 'react-router-dom';
 import Entpart from '../../ent-part/ENTpart';
 import DoctorPageBanner from '../../DoctorPageBanner/DoctorPageBanner';
+import { Helmet } from 'react-helmet';
 
 const Sridutt = () => {
 
@@ -62,102 +63,119 @@ const Sridutt = () => {
         {
             img1: assets.hearing,
             img2: assets.hearingcolor,
+            alt: "clinic for ear cleaning in vijay nagar",
             title: "Hearing Loss & Ear Discharge",
             para: "Hearing loss is a reduction in the ability to perceive sounds and can range from mild to complete hearing loss. It may be temporary or permanent and is commonly associated with conditions affecting the outer, middle, or inner ear. Ear discharge, also called otorrhea, is the drainage of fluid from the ear and often indicates infection or trauma.Common causes include earwax impaction, otitis media (middle ear infection), tympanic membrane perforation, chronic ear disease, or exposure to loud noise. Ear discharge can occur due to bacterial or fungal infections, foreign body presence, or ruptured eardrums."
         },
         {
             img1: assets.sore,
             img2: assets.sorecolor,
+            alt: "best ear doctor in vijay nagar",
             title: "Voice Hoarseness & Throat Pain",
             para: "Hoarseness is characterized by a raspy or strained voice, often due to inflammation or lesions of the vocal cords. Throat pain may accompany hoarseness and is frequently linked to infections, allergies or reflux.Causes include acute laryngitis, vocal overuse, acid reflux (LPR), vocal cord nodules, polyps, or early malignancies. Throat pain may also result from bacterial infections, post-nasal drip, or tonsillar issues."
         },
         {
             img1: assets.sleeping,
             img2: assets.sleepingcolor,
+            alt: "best clinic for ear cleaning near me",
             title: "Snoring & Sleep Breathing Issues",
             para: "Snoring is noisy breathing during sleep caused by vibrations of soft tissues in the throat. When associated with frequent breathing pauses, it may indicate Obstructive Sleep Apnea (OSA), a serious health condition.Common causes include obesity, nasal blockage, enlarged tonsils or adenoids, weak throat muscles and a long soft palate. OSA can lead to fatigue, heart issues and poor quality of life if untreated."
         },
         {
             img1: assets.baby,
             img2: assets.babycolor,
+            alt: "best doctor for tonsillectomy in bangalore",
             title: "Pediatric ENT Problems",
             para: "Hoarseness is characterized by a raspy or strained voice, often due to inflammation or lesions of the vocal cords. Throat pain may accompany hoarseness and is frequently linked to infections, allergies or reflux.Causes include acute laryngitis, vocal overuse, acid reflux (LPR), vocal cord nodules, polyps, or early malignancies. Throat pain may also result from bacterial infections, post-nasal drip, or tonsillar issues."
         },
         {
             img1: assets.ear1,
             img2: assets.earcolor1,
+            alt: "best severe sore throat treatment vijay nagar",
             title: "Ear Ringing (Tinnitus) & Dizziness",
             para: "Tinnitus is the perception of sound (ringing, buzzing, or clicking) without an actual source. Dizziness or vertigo refers to a sensation of spinning or imbalance, often related to inner ear issues.These symptoms are commonly caused by sensorineural hearing loss, ear infections, vestibular neuronitis, Meniere’s disease, or prolonged exposure to loud noise."
         },
         {
             img1: assets.nose,
             img2: assets.nosecolor,
+            alt: "best clinic for throat stones removal near me",
             title: "Nosebleeds & Deviated Septum",
             para: "Nosebleeds (epistaxis) occur when blood vessels in the nasal lining rupture, often due to trauma, dryness, or infection. A deviated nasal septum, where the nasal partition is off-center, can cause breathing difficulties, snoring and recurrent nosebleeds.Contributing factors include nasal injuries, infections, environmental dryness, or congenital abnormalities."
         },
         {
             img1: assets.defect,
             img2: assets.defectcolor,
+            alt: "best ent doctor for polyps in nose vijay nagar",
             title: "Speech Delay in Children",
             para: "Speech delay is when a child does not develop speech and language skills within the expected age range. It may affect expressive, receptive, or social communication abilities.Causes include hearing impairment, recurrent ear infections, enlarged adenoids, neurological delays, or autism spectrum disorders."
         },
         {
             img1: assets.head,
             img2: assets.headcolor,
+            alt: "best tonsillitis treatment doctor in vijay nagar",
             title: "General ENT Check-ups & Minor Procedures",
             para: "ENT health involves more than just treating infections. Routine check-ups can help identify early signs of hearing loss, sinus problems, throat issues, or structural abnormalities."
         },
         {
             img1: assets.voice,
             img2: assets.voicecolor,
+            alt: "best ear doctor for hearing loss near me",
             title: "Voice Surgeries",
             para: "Voice disorders affect communication and can severely impact quality of life, especially for individuals who rely on their voice professionally. These conditions may involve vocal cord nodules, cysts, paralysis, or scarring.Causes include voice overuse, trauma, infections, acid reflux, or tumors of the vocal cords."
         },
         {
             img1: assets.mouth,
             img2: assets.mouthcolor,
+            alt: "best ent allergy clinic in vijay nagar",
             title: "Tonsillectomy",
             para: "Voice disorders affect communication and can severely impact quality of life, especially for individuals who rely on their voice professionally. These conditions may involve vocal cord nodules, cysts, paralysis, or scarring.Causes include voice overuse, trauma, infections, acid reflux, or tumors of the vocal cords."
         },
         {
             img1: assets.neck,
             img2: assets.neckcolor,
+            alt: "best doctor for strep throat in vijay nagar",
             title: "Head and Neck Tumor Surgery",
             para: "Head and neck tumors can affect the salivary glands, thyroid gland, lymph nodes, or mucosal areas of the mouth and throat. Symptoms may include a lump, difficulty swallowing, voice changes, or unexplained weight loss.Causes range from benign cysts to malignancies linked to tobacco use, viral infections, or genetic factors."
         },
         {
             img1: assets.human,
             img2: assets.humancolor,
+            alt: "best ent specialist for ear care in bangalore",
             title: "Surgery for Obstructive Sleep Apnea",
             para: "Obstructive Sleep Apnea (OSA) is a condition where the airway becomes partially or fully blocked during sleep, leading to breathing pauses, disrupted rest and decreased oxygen levels. It is often associated with loud snoring, daytime fatigue and long-term cardiovascular complications.OSA may be caused by structural abnormalities such as enlarged tonsils, a deviated nasal septum, excess soft tissue in the throat, or weak airway muscles."
         },
         {
             img1: assets.rhinoplasty,
             img2: assets.rhinoplastycolor,
+            alt: "ent clinic in vijay nagar bangalore",
             title: "Endoscopic Minimal Access Septoplasty & Sinus Surgery",
             para: "Chronic nasal congestion and recurrent sinus infections often stem from structural blockages in the nasal passage and sinuses. Septoplasty corrects a deviated nasal septum, while endoscopic sinus surgery opens blocked sinus channels.Conditions treated include chronic sinusitis, nasal polyps, mucosal thickening and sinus headaches."
         },
         {
             img1: assets.ear,
             img2: assets.earcolor,
+            alt: "ear cleaning near vijay nagar bangalore",
             title: "Micro Ear Surgery for Hearing Restoration - Tympanoplasty",
             para: "Tympanoplasty is a surgical procedure to repair a perforated eardrum and restore hearing. It may also involve reconstruction of middle ear bones in cases of chronic ear infections or trauma.The most common causes include recurrent otitis media, trauma, or prolonged ear discharge."
         },
         {
             img1: assets.laser,
             img2: assets.lasercolor,
+            alt: "severe sore throat treatment vijay nagar",
             title: "Microlaryngeal Surgery",
             para: "Microlaryngeal surgery is a specialized procedure to treat benign and malignant lesions of the vocal cords. It is recommended for conditions like vocal cord polyps, nodules, cysts and papillomas.Causes often include chronic voice misuse, prolonged inflammation, infections or laryngeal tumors."
         },
         {
             img1: assets.surgery,
             img2: assets.surgerycolor,
+            alt: "throat stones removal clinic near me",
             title: "Endoscopic Sinonasal Tumor Surgery",
             para: "Sinonasal tumors may develop in the nasal cavity or sinuses and present with symptoms like nasal obstruction, facial swelling, epistaxis, or vision changes. These tumors may be benign or malignant and require prompt attention.Risk factors include chronic inflammation, occupational exposure to irritants, or genetic predisposition."
         },
         {
             img1: assets.runny,
             img2: assets.runnycolor,
+            alt: "ent doctor for polyps in nose vijay nagar",
             title: "Allergic Rhinitis",
             para: "Allergic rhinitis is an immune system response to allergens such as dust, pollen, or pet dander. It causes symptoms like sneezing, nasal congestion, runny nose and itchy eyes.This condition may be seasonal (hay fever) or perennial and is often associated with asthma or sinusitis.We diagnose allergic rhinitis based on clinical symptoms and nasal examination.Treatment includes antihistamines, nasal sprays, allergen avoidance and lifestyle modifications. For chronic cases, immunotherapy or corrective nasal surgery may be recommended."
         },
@@ -169,13 +187,22 @@ const Sridutt = () => {
             Qualiication: 'MBBS, MS - ENT & Head and Neck Surgery',
             year: '10+ Years of Experience',
             Experience: 'Consultant ENT Surgeon',
-            img: assets.drImage2
+            img: assets.drImage2,
+            alt: "best ent clinic in vijay nagar bangalore"
         }
     ]
 
 
     return (
         <div className={styles.full}>
+
+            <Helmet>
+                <title>Dr. Sridutt – ENT Surgeon in Vijayanagar Bangalore</title>
+                <meta name="description" content="Expert in sinus, throat, voice, and sleep issues. Trusted ENT care with Dr. Sridutt at Sankalpa Clinic." />
+                <meta
+                    name="keywords"
+                    content="ent near me, ear doctor near me, ear cleaning near me, strep throat, ear cleaning, ear doctor, sore throat treatment, itchy ears, severe sore throat, ear care, dry throat, ear bone, nasal congestion, polyps in nose, stuffy nose, nasal strips, ent allergy, red nose, nose allergy, dry nose, nasal allergies, itchy nose, swollen nose, nasal bone, best ent doctor for sore throat treatment, best clinic for nasal allergies and congestion, best treatment for tonsillitis and sore throat, best ent for itchy ears and dry throat, best treatment for tonsils inflammation, best doctor for nasal congestion and stuffy nose, best ent clinic for hearing loss and ear care, best sore throat and tonsillitis treatment, best doctor for dry nose and nose allergy, best treatment for polyps in nose, best ent for itchy nose and itchy ears, best doctor for nasal bone and swollen nose" />
+            </Helmet>
             <div>
                 <DoctorPageBanner detail={details[0]} />
             </div>
