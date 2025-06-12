@@ -1581,7 +1581,7 @@ a {
         position: relative;
         width: 360px;
         flex-shrink: 0;
-        top: 60px;
+        top: 30px;
     }
 
     .form-btn {
