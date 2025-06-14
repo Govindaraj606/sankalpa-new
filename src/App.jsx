@@ -26,9 +26,9 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path='/' element={<Homepage />} />
-          <Route path='/doctor/dr-jagadish' element={<Jagadish />} />
-          <Route path='/doctor/dr-sridutt' element={<Sridutt />} />
-          <Route path='/Contact' element={<Contact />} />
+          <Route path='/dermatologist-vijayanagar-dr-n-a-jagadish' element={<Jagadish />} />
+          <Route path='/ent-specialist-vijayanagar-dr-sridutt-shekar' element={<Sridutt />} />
+          <Route path='/contact-ent-dermatology-clinic-vijayanagar' element={<Contact />} />
 
         </Routes>
         <Footer />

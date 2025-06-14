@@ -32,7 +32,7 @@ const DoctorPageBanner = ({ detail }) => {
 
 
                     <div className={style.buttonContainer}>
-                        <Link to={'/contact'}><button className={style.appointmentButton}>
+                        <Link to={'/contact-ent-dermatology-clinic-vijayanagar'}><button className={style.appointmentButton}>
                             <div className={style.buttonBg1}>Book Consultation</div>
                             <div className={style.buttonBg2}><FaArrowRight className={style.rightArrow} /></div>
                         </button></Link>
@@ -76,7 +76,7 @@ const DoctorPageBanner = ({ detail }) => {
                         <div className={style.docQualiication}>{detail.Qualiication}</div>
 
                         <div className={style.buttonContainer}>
-                           <Link to={'/contact'}> <button className={style.appointmentButton}>
+                           <Link to={'/contact-ent-dermatology-clinic-vijayanagar'}> <button className={style.appointmentButton}>
                                 <div className={style.buttonBg1}>Book Consultation</div>
                                 <div className={style.buttonBg2}><FaArrowRight className={style.rightArrow} /></div>
                             </button></Link>

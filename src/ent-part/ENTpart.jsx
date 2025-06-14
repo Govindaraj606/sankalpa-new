@@ -58,7 +58,7 @@ const Entpart = (props) => {
                     </div>
                 </div>
                 <div>
-                    <Link to={'/Contact'}><button className={styles.btn}>Book Appointment</button></Link>
+                    <Link to={'/contact-ent-dermatology-clinic-vijayanagar'}><button className={styles.btn}>Book Appointment</button></Link>
                 </div>
             </div>
         </div>

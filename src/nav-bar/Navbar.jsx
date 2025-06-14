@@ -28,14 +28,14 @@ const Navbar = () => {
             name: 'Dr. N.A. Jagadish',
             title: 'Senior Consultant Dermatologist',
             img: assets.doctorimg,
-            link: '/doctor/dr-jagadish',
+            link: '/dermatologist-vijayanagar-dr-n-a-jagadish',
             alt:"best doctor for strep throat in vijay nagar"
         },
         {
             name: 'Dr. Sridutt Shekar',
             title: 'Consultant ENT Surgeon',
             img: assets.medical,
-            link: '/doctor/dr-sridutt',
+            link: '/ent-specialist-vijayanagar-dr-sridutt-shekar',
             alt:"best ent specialist for ear care in bangalore"
         },
     ];
@@ -66,7 +66,7 @@ const Navbar = () => {
                             </div>
                         )}
                     </div>
-                    <Link className={styles.link} to={"/Contact"}><div className={styles.li} onClick={closeDoctors}>Contact Us</div></Link>
+                    <Link className={styles.link} to={"/contact-ent-dermatology-clinic-vijayanagar"}><div className={styles.li} onClick={closeDoctors}>Contact Us</div></Link>
                 </div>
             </div>
 
@@ -105,7 +105,7 @@ const Navbar = () => {
                             </div>
                         )}
                     </div>
-                    <Link className={styles.link} to={'/Contact'} onClick={handleLinkClick}><div>Contact</div></Link>
+                    <Link className={styles.link} to={'/contact-ent-dermatology-clinic-vijayanagar'} onClick={handleLinkClick}><div>Contact</div></Link>
 
                 </div>
             </div>
