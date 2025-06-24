@@ -287,81 +287,78 @@ const Homepage = () => {
 
             {/* contact-page*/}
 
-            <div className="contact-part">
 
-                <div className='info-part'>
-                    <div className='info-part-1'>
-                        <div className='box'></div>
-                        <div className='form-part'>
-                            <div className='form-part-1'>
-                                <div className='form-heading'>Get in Touch</div>
-                                <div className='form-sub-para font-para'>Have a question or need to book an appointment ?</div>
-                                <div className='form-para'>We’re just a call or message away. Reach out to connect with our ENT or Dermatology specialists - we’re here to help, every step of the way.</div>
-                            </div>
-                            <form onSubmit={handleSubmit(onSubmit)}>
-                                <div className=''>
-                                    <input {...register("firstname", { required: true, pattern: /^[A-Za-z]+$/i })} className='input-name border input underline' type="text" placeholder='Name*' />
-                                    {errors.firstname && <span className='alert-msg'>Name is required</span>}
-                                </div>
-                                <div className=''>
-                                    <input  {...register("phonenumber", {
-                                        required: "Phone number is required",
-                                        pattern: {
-                                            value: /^[0-9]{10}$/,
-                                            message: "Enter a valid 10-digit phone number"
-                                        }
-                                    })} className='input-contact border input underline' type="phone" inputMode="numeric" maxLength={10} placeholder='Contact no*' />
-                                    {errors.phonenumber && <span className='alert-msg'>{errors.phonenumber.message || 'Phone number is required'}</span>}
-                                </div>
-                                <div className=''>
-                                    <textarea {...register("message", { required: true })} className='msg border input underline' placeholder='Message'></textarea>
-                                    {errors.message && <span className='alert-msg'>message is required</span>}
-                                </div>
-                                <button type='submit' className='form-btn'>Send</button>
-                            </form>
+            <div className='info-part'>
+                <div className='info-part-1'>
+                    <div className='box'></div>
+                    <div className='form-part'>
+                        <div className='form-part-1'>
+                            <div className='form-heading'>Get in Touch</div>
+                            <div className='form-sub-para font-para'>Have a question or need to book an appointment ?</div>
+                            <div className='form-para'>We’re just a call or message away. Reach out to connect with our ENT or Dermatology specialists - we’re here to help, every step of the way.</div>
                         </div>
-                    </div>
-
-                    <div className='info-part-1'>
-
-                        <img className='ractangle-img' src={assets.ractangle} alt="book appointment Sankalpa Clinic dermatologist" />
-                        <img className='ractangle-resp' src={assets.ractangleresp} alt="Sankalpa Clinic for pigmentation treatment" />
-
-                        <div className='info'>
-                            <div className='info-heading'>Clinic Address</div>
-                            <div className='flex1'>
-                                <img src={assets.addressbook} alt="skin whitening Sankalpa Clinic vijay nagar" />
-                                <div className='info-para height'> 15, RPC Layout, Hoshalli Extension, Stage 1, Vijayanagar, Bengaluru, Karnataka 560040</div>
+                        <form onSubmit={handleSubmit(onSubmit)}>
+                            <div className=''>
+                                <input {...register("firstname", { required: true, pattern: /^[A-Za-z]+$/i })} className='input-name border input underline' type="text" placeholder='Name*' />
+                                {errors.firstname && <span className='alert-msg'>Name is required</span>}
                             </div>
-                            <div className='flex1'>
-                                <img src={assets.call} alt="best dermatologist Sankalpa Clinic" />
-                                <a href="tel:099459 94257 / 9735121129"><div className='info-para height'> 099459 94257 / 9735121129</div></a>
+                            <div className=''>
+                                <input  {...register("phonenumber", {
+                                    required: "Phone number is required",
+                                    pattern: {
+                                        value: /^[0-9]{10}$/,
+                                        message: "Enter a valid 10-digit phone number"
+                                    }
+                                })} className='input-contact border input underline' type="phone" inputMode="numeric" maxLength={10} placeholder='Contact no*' />
+                                {errors.phonenumber && <span className='alert-msg'>{errors.phonenumber.message || 'Phone number is required'}</span>}
                             </div>
-                            <div className='flex1'>
-                                <img src={assets.mail1} alt="specialist for grey hair and hair treatment" />
-                                <a href="mailto:sriduttshekar@gmail.com"><div className='info-para height'> sriduttshekar@gmail.com</div></a>
+                            <div className=''>
+                                <textarea {...register("message", { required: true })} className='msg border input underline' placeholder='Message'></textarea>
+                                {errors.message && <span className='alert-msg'>message is required</span>}
                             </div>
-
-                            <div className='info-heading'>Timings</div>
-                            <div className='flex1'>
-                                <img src={assets.hair} alt="skin specialist near me vijay nagar" />
-                                <div className='info-para width height'> Dermatology Consultation: Monday to Saturday: 10 AM - 4 PM</div>
-                            </div>
-                            <div className='flex1'>
-                                <img src={assets.rounded} alt="best dermatologist in vijay nagar bangalore" />
-                                <div className='info-para height'> ENT Consultation: Monday to Saturday: 4 PM - 7 PM</div>
-                            </div>
-                            <div className='info-para m-l'>Sunday : Closed</div>
-
-                        </div>
-                        <div className='icons'>
-                            <a href=""><img className='icon-imgs' src={assets.insta} alt="pigmentation treatment clinic vijay nagar" /></a>
-                            <a href=""> <img className='icon-imgs' src={assets.facebook} alt="laser treatment for face in bangalore" /></a>
-                            <a href=""> <img className='icon-imgs' src={assets.x} alt="pimple removal treatment vijay nagar" /></a>
-                        </div>
+                            <button type='submit' className='form-btn'>Send</button>
+                        </form>
                     </div>
                 </div>
 
+                <div className='info-part-1'>
+
+                    <img className='ractangle-img' src={assets.ractangle} alt="book appointment Sankalpa Clinic dermatologist" />
+                    <img className='ractangle-resp' src={assets.ractangleresp} alt="Sankalpa Clinic for pigmentation treatment" />
+
+                    <div className='info'>
+                        <div className='info-heading'>Clinic Address</div>
+                        <div className='flex1'>
+                            <img src={assets.addressbook} alt="skin whitening Sankalpa Clinic vijay nagar" />
+                            <div className='info-para height'> 15, RPC Layout, Hoshalli Extension, Stage 1, Vijayanagar, Bengaluru, Karnataka 560040</div>
+                        </div>
+                        <div className='flex1'>
+                            <img src={assets.call} alt="best dermatologist Sankalpa Clinic" />
+                            <a href="tel:099459 94257 / 9735121129"><div className='info-para height'> 099459 94257 / 9735121129</div></a>
+                        </div>
+                        <div className='flex1'>
+                            <img src={assets.mail1} alt="specialist for grey hair and hair treatment" />
+                            <a href="mailto:sriduttshekar@gmail.com"><div className='info-para height'> sriduttshekar@gmail.com</div></a>
+                        </div>
+
+                        <div className='info-heading'>Timings</div>
+                        <div className='flex1'>
+                            <img src={assets.hair} alt="skin specialist near me vijay nagar" />
+                            <div className='info-para width height'> Dermatology Consultation: Monday to Saturday: 10 AM - 4 PM</div>
+                        </div>
+                        <div className='flex1'>
+                            <img src={assets.rounded} alt="best dermatologist in vijay nagar bangalore" />
+                            <div className='info-para height'> ENT Consultation: Monday to Saturday: 4 PM - 7 PM</div>
+                        </div>
+                        <div className='info-para m-l'>Sunday : Closed</div>
+
+                    </div>
+                    <div className='icons'>
+                        <a href=""><img className='icon-imgs' src={assets.insta} alt="pigmentation treatment clinic vijay nagar" /></a>
+                        <a href=""> <img className='icon-imgs' src={assets.facebook} alt="laser treatment for face in bangalore" /></a>
+                        <a href=""> <img className='icon-imgs' src={assets.x} alt="pimple removal treatment vijay nagar" /></a>
+                    </div>
+                </div>
             </div>
         </div>
     )
