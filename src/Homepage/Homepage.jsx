@@ -162,10 +162,10 @@ const Homepage = () => {
                             </div>
 
                         </div>
-                        <div className='about-img'>
+                        {/* <div className='about-img'>
                             <img className='group-img' src={assets.groupimg} alt="best doctor for nasal bone and swollen nose" />
                             <img className='group-resp' src={assets.groupresp} alt="best dermatologist in vijay nagar bangalore" />
-                        </div>
+                        </div> */}
 
                     </div>
                 </div>

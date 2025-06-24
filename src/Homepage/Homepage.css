@@ -147,12 +147,13 @@
     display: flex;
     /* margin-top: 50px; */
     gap: 50px;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .frame-imgs {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 50px;
     margin-top: 50px;
     width: 170px;
@@ -165,6 +166,7 @@
     flex-direction: column;
     gap: 0px;
     justify-content: center;
+    align-items: center;
     margin-top: 50px;
 }
 
@@ -1111,8 +1113,8 @@ a {
     .frame-imgs {
         display: flex;
         flex-direction: row;
-        justify-content: start;
-        margin-left: 70px;
+        justify-content: center;
+        margin-bottom: 20px;
     }
 
     .btn-1 {
@@ -1168,7 +1170,7 @@ a {
     }
 
     .services-part {
-        top: 70px;
+        top: 40px;
         padding-top: 0px;
     }
 
