@@ -122,7 +122,7 @@ const Contact = () => {
 
             <div className={styles.map}>
                 <div className={styles.map_heading}>Clinic Location</div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.062370637165!2d77.54236757484128!3d12.967860787347105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3de3d4381d27%3A0xc872c57f28df1f90!2sSankalpa%20Skin%20and%20ENT%20center!5e0!3m2!1sen!2sin!4v1748778318116!5m2!1sen!2sin"
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0615812992255!2d77.54490799999999!3d12.967911299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa02749f92c2f1247%3A0xb185216e1fad1d41!2sSankalpa%20Skin%20%26%20ENT%20Clinic!5e0!3m2!1sen!2sin!4v1750742222033!5m2!1sen!2sin"
                     width="1040px;"
                     height="299px"
                     style={{ border: 0 }}

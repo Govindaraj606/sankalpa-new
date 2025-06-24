@@ -21,7 +21,7 @@
 
 .banner-img {
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     position: absolute;
 }
 
@@ -118,7 +118,7 @@
 
 .content-heading-part {
     position: relative;
-    top: 267px;
+    top: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1557,6 +1557,7 @@ a {
         position: absolute;
         top: 150px;
         left: 47px;
+        line-height: 45px;
 
     }
 
@@ -1622,7 +1623,7 @@ a {
     }
 
     .icons {
-        top: 573px;
+        top: 600px;
         left: 187px;
     }
 
