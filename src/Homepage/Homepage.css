@@ -1323,6 +1323,7 @@ a {
         display: block;
         width: 98%;
         height: auto;
+        margin-bottom: 50px;
     }
 
     .ractangle-img {
@@ -1423,7 +1424,7 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        top: 150px;
+        top: 100px;
     }
 
     .content-main-heading {
@@ -1634,6 +1635,7 @@ a {
         padding: 5px;
         display: flex;
         justify-content: center;
+        margin-top: 0px;
     }
 
     .frame-img {
