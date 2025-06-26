@@ -81,7 +81,35 @@ const Homepage = () => {
         alert("Form submitted successfully!")
     }
 
+    const [count1, setCount1] = useState(0);
+    const [count2, setCount2] = useState(0);
+    const [count3, setCount3] = useState(0);
 
+    useEffect(() => {
+        const animateCount = (setCount, target, customSpeed) => {
+            let current = 0;
+            // The interval will run every 2 milliseconds to update the count.
+            const intervalSpeed = customSpeed !== undefined ? customSpeed : (target > 100 ? 1 : 10)
+            // This value controls the animation speed.
+            const increment = target / (target / 10 + 20);
+            const interval = setInterval(() => {
+                current += increment; // Increase the current count by the increment
+                if (current >= target) {
+                    // If the current count reaches or exceeds the target, stop the animation
+                    current = target; // Ensure the final value is exactly the target
+                    clearInterval(interval); // Clear the interval to stop the animation
+                }
+                setCount(Math.floor(current)); // Update the state, rounding down to an integer
+            }, intervalSpeed); // Use the determined interval speed in milliseconds
+
+            // Cleanup function to clear the interval if the component unmounts
+            return () => clearInterval(interval);
+        };
+
+        animateCount(setCount1, 8000);
+        animateCount(setCount2, 20, 100);
+        animateCount(setCount3, 2, 100);
+    }, []);
 
 
 
@@ -94,7 +122,7 @@ const Homepage = () => {
                 <meta name="description" content="Dual-specialty clinic in Vijayanagar offering expert ENT and dermatology care by experienced consultants." />
                 <meta
                     name="keywords"
-                    content="ent near me, ear doctor near me, ear cleaning near me, strep throat, ear cleaning, ear doctor, sore throat treatment, itchy ears, severe sore throat, ear care, dry throat, ear bone, nasal congestion, polyps in nose, stuffy nose, nasal strips, ent allergy, red nose, nose allergy, dry nose, nasal allergies, itchy nose, swollen nose, nasal bone, best ent doctor for sore throat treatment, best clinic for nasal allergies and congestion, best treatment for tonsillitis and sore throat, best ent for itchy ears and dry throat, best treatment for tonsils inflammation, best doctor for nasal congestion and stuffy nose, best ent clinic for hearing loss and ear care, best sore throat and tonsillitis treatment, best doctor for dry nose and nose allergy, best treatment for polyps in nose, best ent for itchy nose and itchy ears, best doctor for nasal bone and swollen nose"/>
+                    content="ent near me, ear doctor near me, ear cleaning near me, strep throat, ear cleaning, ear doctor, sore throat treatment, itchy ears, severe sore throat, ear care, dry throat, ear bone, nasal congestion, polyps in nose, stuffy nose, nasal strips, ent allergy, red nose, nose allergy, dry nose, nasal allergies, itchy nose, swollen nose, nasal bone, best ent doctor for sore throat treatment, best clinic for nasal allergies and congestion, best treatment for tonsillitis and sore throat, best ent for itchy ears and dry throat, best treatment for tonsils inflammation, best doctor for nasal congestion and stuffy nose, best ent clinic for hearing loss and ear care, best sore throat and tonsillitis treatment, best doctor for dry nose and nose allergy, best treatment for polyps in nose, best ent for itchy nose and itchy ears, best doctor for nasal bone and swollen nose" />
 
                 <meta />
             </Helmet>
@@ -138,7 +166,7 @@ const Homepage = () => {
                                     <img className='frame-img' src={assets.frame1} alt="best doctor for nasal congestion and stuffy nose" />
                                     <div className='frame-content'>
                                         <img className='frame-icons' src={assets.medicine} alt="best ent clinic for hearing loss and ear care" />
-                                        <div className='number'>8000+</div>
+                                        <div className='number'>{count1}+</div>
                                         <div className='frame-title '>Happy Patients</div>
                                     </div>
                                 </div>
@@ -146,7 +174,7 @@ const Homepage = () => {
                                     <img className='frame-img' src={assets.frame2} alt="best sore throat and tonsillitis treatment" />
                                     <div className='frame-content'>
                                         <img className='frame-icons' src={assets.agreement} alt="best doctor for dry nose and nose allergy" />
-                                        <div className='number'>20+</div>
+                                        <div className='number'>{count2}+</div>
                                         <div className='frame-title'>Years of Experience</div>
                                     </div>
                                 </div>
@@ -154,7 +182,7 @@ const Homepage = () => {
                                     <img className='frame-img' src={assets.frame3} alt="best treatment for polyps in nose" />
                                     <div className='frame-content'>
                                         <img className={`repairing ${fade ? "fade-in" : "fade-out"}`} src={imgs[index]} alt="best ent for itchy nose and itchy ears" />
-                                        <div className='number'>2</div>
+                                        <div className='number'>{count3}+</div>
                                         <div className='frame-title '>Specialties</div>
                                     </div>
                                 </div>
@@ -264,9 +292,6 @@ const Homepage = () => {
                     </div>
                 </div>
             </div>
-
-
-
 
 
             {/* Testimonials-part */}
