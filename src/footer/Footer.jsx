@@ -18,7 +18,7 @@ const Footer = () => {
 
                 <div className='bottom-list  right-line left-line'>
                     <Link className='link' to={'/'}> <div className='ml'>Home</div></Link>
-                    <Link className='link' to={'/sankalpaclinic.com/dr-jagadish-dermatologist-bangalore'}><div className='ml'>Doctor</div></Link>
+                    <Link className='link' to={'/dr-jagadish-dermatologist-bangalore'}><div className='ml'>Doctor</div></Link>
                     <Link className='link' to={'/contact'}><div className='ml'>Contact</div></Link>
                     <div className='underline-2'></div>
                 </div>
@@ -72,7 +72,7 @@ const Footer = () => {
                     <div className='foot-part2'>
                         <div className='bottom-list'>
                             <Link className='link' to={'/'}><div>Home</div></Link>
-                            <Link className='link' to={'/sankalpaclinic.com/dr-jagadish-dermatologist-bangalore'}> <div>Doctor</div></Link>
+                            <Link className='link' to={'/dr-jagadish-dermatologist-bangalore'}> <div>Doctor</div></Link>
                             <Link className='link' to={'/contact'}><div>Contact</div></Link>
                         </div>
 
