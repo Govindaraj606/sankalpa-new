@@ -138,7 +138,7 @@ const Homepage = () => {
                         <div className='sub-headding'>Expert ENT and Dermatology Care in Vijayanagar</div>
 
                         <div className='btn-part'>
-                            <Link to={'/contact-ent-dermatology-clinic-vijayanagar'}><button className='btn-1'>Book Appointment</button></Link>
+                            <Link to={'/contact'}><button className='btn-1'>Book Appointment</button></Link>
                             <button className='btn-2' onClick={scrollToForm}><img className='dot' src={assets.dot} alt="best treatment for tonsillitis and sore throat" />View Treatments</button>
                         </div>
 
@@ -245,7 +245,7 @@ const Homepage = () => {
                             <div className='degree'>B.Sc, MBBS, D.V.D</div>
                             <div className="position">Senior Consultant Dermatologist</div>
                             <div className="year">Years of Experience: 41</div>
-                            <Link to={'/dermatologist-vijayanagar-dr-n-a-jagadish'}><button className="doctor-btn"><img className='dot-img' src={assets.dot} alt="skin whitening treatment in vijay nagar" />Know More</button></Link>
+                            <Link to={'/sankalpaclinic.com/dr-jagadish-dermatologist-bangalore'}><button className="doctor-btn"><img className='dot-img' src={assets.dot} alt="skin whitening treatment in vijay nagar" />Know More</button></Link>
                         </div>
                     </div>
 
@@ -256,7 +256,7 @@ const Homepage = () => {
                             <div className='degree'>MBBS, MS - ENT & Head and Neck Surgery</div>
                             <div className="position">Consultant ENT Surgeon</div>
                             <div className="year">Years of Experience: 10+</div>
-                            <Link to={'/ent-specialist-vijayanagar-dr-sridutt-shekar'}><button className="doctor-btn"><img className='dot-img' src={assets.dot} alt="Sankalpa Clinic dermatology vijay nagar" />Know More</button></Link>
+                            <Link to={'/sankalpaclinic.com/dr-sridutt-ent-surgeon-bangalore'}><button className="doctor-btn"><img className='dot-img' src={assets.dot} alt="Sankalpa Clinic dermatology vijay nagar" />Know More</button></Link>
                         </div>
                     </div>
                 </div>
@@ -275,7 +275,7 @@ const Homepage = () => {
                                 <div className='doctor-degree doctor-para'>B.Sc, MBBS, D.V.D</div>
                                 <div className="doctor-position doctor-para">Senior Consultant Dermatologist</div>
                                 <div className="doctor-year doctor-para">Years of Experience: 41</div>
-                                <Link to={'/dermatologist-vijayanagar-dr-n-a-jagadish'}><button className="mobile-doctor-btn"><img className='dot-img' src={assets.dot} alt="hair loss treatment at Sankalpa Clinic" />Know More</button></Link>
+                                <Link to={'/sankalpaclinic.com/dr-jagadish-dermatologist-bangalore'}><button className="mobile-doctor-btn"><img className='dot-img' src={assets.dot} alt="hair loss treatment at Sankalpa Clinic" />Know More</button></Link>
                             </div>
                         </div>
 
@@ -286,7 +286,7 @@ const Homepage = () => {
                                 <div className='doctor-degree doctor-para'>MBBS, MS - ENT & Head and Neck Surgery</div>
                                 <div className="doctor-position doctor-para">Consultant ENT Surgeon</div>
                                 <div className="doctor-year doctor-para">Years of Experience: 10+</div>
-                                <Link to={'/ent-specialist-vijayanagar-dr-sridutt-shekar'}><button className="mobile-doctor-btn"><img className='dot-img' src={assets.dot} alt="laser treatment for face Sankalpa Clinic" />Know More</button></Link>
+                                <Link to={'/sankalpaclinic.com/dr-sridutt-ent-surgeon-bangalore'}><button className="mobile-doctor-btn"><img className='dot-img' src={assets.dot} alt="laser treatment for face Sankalpa Clinic" />Know More</button></Link>
                             </div>
                         </div>
                     </div>

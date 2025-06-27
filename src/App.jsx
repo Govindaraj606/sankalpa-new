@@ -23,15 +23,15 @@ const App = () => {
 
   return (
     <div>
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<Homepage />} />
-          <Route path='/dermatologist-vijayanagar-dr-n-a-jagadish' element={<Jagadish />} />
-          <Route path='/ent-specialist-vijayanagar-dr-sridutt-shekar' element={<Sridutt />} />
-          <Route path='/contact-ent-dermatology-clinic-vijayanagar' element={<Contact />} />
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Homepage />} />
+        <Route path='/sankalpaclinic.com/dr-jagadish-dermatologist-bangalore' element={<Jagadish />} />
+        <Route path='/sankalpaclinic.com/dr-sridutt-ent-surgeon-bangalore' element={<Sridutt />} />
+        <Route path='/contact' element={<Contact />} />
 
-        </Routes>
-        <Footer />
+      </Routes>
+      <Footer />
 
     </div>
   )

@@ -18,15 +18,15 @@ const Footer = () => {
 
                 <div className='bottom-list  right-line left-line'>
                     <Link className='link' to={'/'}> <div className='ml'>Home</div></Link>
-                    <Link className='link' to={'/dermatologist-vijayanagar-dr-n-a-jagadish'}><div className='ml'>Doctor</div></Link>
-                    <Link className='link' to={'/contact-ent-dermatology-clinic-vijayanagar'}><div className='ml'>Contact</div></Link>
+                    <Link className='link' to={'/sankalpaclinic.com/dr-jagadish-dermatologist-bangalore'}><div className='ml'>Doctor</div></Link>
+                    <Link className='link' to={'/contact'}><div className='ml'>Contact</div></Link>
                     <div className='underline-2'></div>
                 </div>
 
                 <div className='box-2'>
                     <div className='box-2-1'>
                         <div className='box-2-heading'>Sankalpa Clinic is a dual-specialty clinic in Vijayanagar offering trusted care in ENT and Dermatology, led by experienced consultants in a calm and patient-friendly space.</div>
-                        <Link to={'/contact-ent-dermatology-clinic-vijayanagar'}> <button className='box-2-btn'>Contact Us <img src={assets.arrow} alt="best treatment for tonsils inflammation" /></button></Link>
+                        <Link to={'/contact'}> <button className='box-2-btn'>Contact Us <img src={assets.arrow} alt="best treatment for tonsils inflammation" /></button></Link>
                     </div>
 
                     <div className='icons-part pl '>
@@ -72,8 +72,8 @@ const Footer = () => {
                     <div className='foot-part2'>
                         <div className='bottom-list'>
                             <Link className='link' to={'/'}><div>Home</div></Link>
-                            <Link className='link' to={'/dermatologist-vijayanagar-dr-n-a-jagadish'}> <div>Doctor</div></Link>
-                            <Link className='link' to={'/contact-ent-dermatology-clinic-vijayanagar'}><div>Contact</div></Link>
+                            <Link className='link' to={'/sankalpaclinic.com/dr-jagadish-dermatologist-bangalore'}> <div>Doctor</div></Link>
+                            <Link className='link' to={'/contact'}><div>Contact</div></Link>
                         </div>
 
                         <div>
@@ -85,7 +85,7 @@ const Footer = () => {
                             </div>
 
                             <div className='box-2-mobile-h'>Sankalpa Clinic is a dual-specialty clinic in Vijayanagar offering trusted care in ENT and Dermatology, led by experienced consultants in a calm and patient-friendly space.</div>
-                            <Link to={'/contact-ent-dermatology-clinic-vijayanagar'}> <button className='box-2-btn'>Contact Us <img src={assets.arrow} alt="best ent doctor for polyps in nose vijay nagar" /></button></Link>
+                            <Link to={'/contact'}> <button className='box-2-btn'>Contact Us <img src={assets.arrow} alt="best ent doctor for polyps in nose vijay nagar" /></button></Link>
                         </div>
                     </div>
                 </div>
