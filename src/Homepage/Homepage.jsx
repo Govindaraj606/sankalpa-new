@@ -143,11 +143,6 @@ const Homepage = () => {
                         </div>
 
                     </div>
-
-                    {/* <div className={`doctor-img ${showFirst ? 'fade-in' : 'fade-out'}`}>
-                        <img className='doctorimg' src={showFirst ? assets.doctor1 : assets.doctor2} alt="best ent for itchy ears and dry throat" />
-                        <img className='doctorimgresp' src={assets.doctorimgresp} alt="best treatment for tonsils inflammation" />
-                    </div> */}
                 </div>
             </div>
 
@@ -156,32 +151,32 @@ const Homepage = () => {
             <div className='content-part'>
                 <div className='content-heading-part'>
                     <div className='content-main-heading'>ABOUT US</div>
-                    <div className='content-sub-heading' ref={knowMore}>Sankalpa Clinic - A therapeutic place for skin, hair and ENT care.</div>
+                    <h1 className='content-sub-heading' ref={knowMore}>Sankalpa Clinic - A therapeutic place for skin, hair and ENT care.</h1>
 
                     <div className='content-para-part'>
                         <div className='content-part-1'>
                             <div className='content-para'>Established in 2022, Sankalpa Clinic is a dual-specialty clinic in RPC Layout, Vijayanagar, offering focused care in ENT and Dermatology. Built with the vision of delivering accessible and affordable healthcare, the clinic combines clinical expertise with a calm, supportive environment. Led by Dr. N.A. Jagadish (Senior Consultant Dermatologist) and Dr. Sridutt Shekar (Consultant ENT Surgeon), Sankalpa Clinic is known for its personalised approach, consistent outcomes and commitment to long-term well-being.</div>
                             <div className='frame-imgs'>
                                 <div className='frame'>
-                                    <img className='frame-img' src={assets.frame1} alt="best doctor for nasal congestion and stuffy nose" />
+                                    <img className='frame-img' src={assets.frame1} alt="Sankalpa Clinic ENT specialist in Vijayanagar" />
                                     <div className='frame-content'>
-                                        <img className='frame-icons' src={assets.medicine} alt="best ent clinic for hearing loss and ear care" />
+                                        <img className='frame-icons' src={assets.medicine} alt="Mobile view banner of Sankalpa Clinic - nasal allergy and congestion care in Bangalore" />
                                         <div className='number'>{count1}+</div>
                                         <div className='frame-title '>Happy Patients</div>
                                     </div>
                                 </div>
                                 <div className='frame'>
-                                    <img className='frame-img' src={assets.frame2} alt="best sore throat and tonsillitis treatment" />
+                                    <img className='frame-img' src={assets.frame2} aalt="Sankalpa Clinic - nasal allergy treatment in Bangalore" />
                                     <div className='frame-content'>
-                                        <img className='frame-icons' src={assets.agreement} alt="best doctor for dry nose and nose allergy" />
+                                        <img className='frame-icons' src={assets.agreement} alt="Sankalpa Clinic - sore throat and tonsillitis ENT treatment" />
                                         <div className='number'>{count2}+</div>
                                         <div className='frame-title'>Years of Experience</div>
                                     </div>
                                 </div>
                                 <div className='frame'>
-                                    <img className='frame-img' src={assets.frame3} alt="best treatment for polyps in nose" />
+                                    <img className='frame-img' src={assets.frame3} alt="Nasal polyps treatment at Sankalpa Clinic ENT center" />
                                     <div className='frame-content'>
-                                        <img className={`repairing ${fade ? "fade-in" : "fade-out"}`} src={imgs[index]} alt="best ent for itchy nose and itchy ears" />
+                                        <img className={`repairing ${fade ? "fade-in" : "fade-out"}`} src={imgs[index]} alt="Itchy nose and itchy ears specialist at Sankalpa Clinic" />
                                         <div className='number'>{count3}+</div>
                                         <div className='frame-title '>Specialties</div>
                                     </div>
@@ -202,25 +197,25 @@ const Homepage = () => {
             {/* services-part */}
 
             <div className='services-part'>
-                <div className='service-heading'>What Defines Care at Sankalpa Clinic?</div>
+                <h2 className='service-heading'>What Defines Care at Sankalpa Clinic?</h2>
 
                 <div >
                     <div className='cards'>
                         <div className="card-4 card mt">
-                            <img src={assets.icon4} alt="skin specialist near me vijay nagar" className="card-4-img" />
+                            <img src={assets.icon4} alt="Personalised skin and ENT care in Vijay Nagar - Sankalpa Clinic" className="card-4-img" />
                             <div className="heading">Service</div>
                             <div className="para">We believe in meaningful, personalised care - beyond just consultation. Every patient is treated with time, respect and focused attention.</div>
                         </div>
 
                         <div className="card-5 card mt">
-                            <img src={assets.icon5} alt="hair fall treatment in vijay nagar" className="card-5-img" />
+                            <img src={assets.icon5} alt="Hair fall treatment and hygiene care at Sankalpa Clinic" className="card-5-img" />
                             <div className="heading">Safety</div>
                             <div className="para">Hygiene, ethics and clinical precision guide every decision we make.
                                 Your well-being is never compromised.</div>
                         </div>
 
                         <div className="card-3 card mt">
-                            <img src={assets.icon2} alt="pigmentation treatment clinic vijay nagar" className="card3-img" />
+                            <img src={assets.icon2} alt="Pigmentation and sensitivity-focused dermatology at Sankalpa Clinic" className="card3-img" />
                             <div className="heading">Sensitivity</div>
                             <div className="para">We listen without rush, understand your concerns and respond with empathy.Your comfort; physical and emotional - is part of our care.</div>
                         </div>
@@ -239,9 +234,9 @@ const Homepage = () => {
                 <div className="doctor-heading">Our Expert Doctors</div>
                 <div className='doctor-content' >
                     <div className='doctor-card'>
-                        <img className="doctor-img-card" src={assets.cardimg1} alt="laser treatment for face in bangalore" />
+                        <img className="doctor-img-card" src={assets.cardimg1} alt="Dr. N.A. Jagadish - Senior Dermatologist at Sankalpa Clinic, Bangalore" />
                         <div className='doctor-deatils'>
-                            <div className="doctor-name">Dr. N.A. Jagadish </div>
+                            <h2 className="doctor-name">Dr. N.A. Jagadish </h2>
                             <div className='degree'>B.Sc, MBBS, D.V.D</div>
                             <div className="position">Senior Consultant Dermatologist</div>
                             <div className="year">Years of Experience: 41</div>
@@ -250,9 +245,9 @@ const Homepage = () => {
                     </div>
 
                     <div className='doctor-card'>
-                        <img className="doctor-img-card" src={assets.cardimg2} alt="pimple removal treatment vijay nagar" />
+                        <img className="doctor-img-card" src={assets.cardimg2} alt="Dr. Sridutt Shekar - ENT Surgeon at Sankalpa Clinic, Vijayanagar" />
                         <div className='doctor-deatils'>
-                            <div className="doctor-name">Dr. Sridutt Shekar </div>
+                            <h2 className="doctor-name">Dr. Sridutt Shekar </h2>
                             <div className='degree'>MBBS, MS - ENT & Head and Neck Surgery</div>
                             <div className="position">Consultant ENT Surgeon</div>
                             <div className="year">Years of Experience: 10+</div>
@@ -269,9 +264,9 @@ const Homepage = () => {
                 <div className='mobile-doctor-content' >
                     <div className='mobile-card'>
                         <div className='mobile-doctor-card' onClick={() => showCard(0)} style={{ height: isShow[0] ? "500px" : "280px" }} >
-                            <img className="mobile-doctor-img-card" src={assets.cardimg1} alt="Sankalpa Clinic skin specialist bangalore" />
+                            <img className="mobile-doctor-img-card" src={assets.cardimg1} alt="Skin whitening consultation with Dr. Jagadish at Sankalpa Clinic" />
                             <div className='mobile-doctor-deatils'>
-                                <div className="mobile-doctor-name">Dr. N.A. Jagadish </div>
+                                <h2 className="mobile-doctor-name">Dr. N.A. Jagadish </h2>
                                 <div className='doctor-degree doctor-para'>B.Sc, MBBS, D.V.D</div>
                                 <div className="doctor-position doctor-para">Senior Consultant Dermatologist</div>
                                 <div className="doctor-year doctor-para">Years of Experience: 41</div>
@@ -280,9 +275,9 @@ const Homepage = () => {
                         </div>
 
                         <div className='mobile-doctor-card' onClick={() => showCard(1)} style={{ height: isShow[1] ? "500px" : "280px" }}>
-                            <img className="mobile-doctor-img-card" src={assets.cardimg2} alt="pimple treatment Sankalpa Clinic" />
+                            <img className="mobile-doctor-img-card" src={assets.cardimg2} alt="ENT and Head & Neck surgery by Dr. Sridutt Shekar - Sankalpa Clinic" />
                             <div className='mobile-doctor-deatils'>
-                                <div className="mobile-doctor-name">Dr. Sridutt Shekar </div>
+                                <h2 className="mobile-doctor-name">Dr. Sridutt Shekar </h2>
                                 <div className='doctor-degree doctor-para'>MBBS, MS - ENT & Head and Neck Surgery</div>
                                 <div className="doctor-position doctor-para">Consultant ENT Surgeon</div>
                                 <div className="doctor-year doctor-para">Years of Experience: 10+</div>
@@ -348,40 +343,40 @@ const Homepage = () => {
 
                 <div className='info-part-1'>
 
-                    <img className='ractangle-img' src={assets.ractangle} alt="book appointment Sankalpa Clinic dermatologist" />
-                    <img className='ractangle-resp' src={assets.ractangleresp} alt="Sankalpa Clinic for pigmentation treatment" />
+                    <img className='ractangle-img' src={assets.ractangle} alt="Book appointment with dermatologist or ENT specialist at Sankalpa Clinic" />
+                    <img className='ractangle-resp' src={assets.ractangleresp} alt="Hair loss and facial rejuvenation - Sankalpa Clinic dermatologist" />
 
                     <div className='info'>
                         <div className='info-heading'>Clinic Address</div>
                         <div className='flex1'>
-                            <img src={assets.addressbook} alt="skin whitening Sankalpa Clinic vijay nagar" />
+                            <img src={assets.addressbook} alt="Sankalpa Clinic for pigmentation treatment in Bangalore" />
                             <div className='info-para height'> 15, RPC Layout, Hoshalli Extension, Stage 1, Vijayanagar, Bengaluru, Karnataka 560040</div>
                         </div>
                         <div className='flex1'>
-                            <img src={assets.call} alt="best dermatologist Sankalpa Clinic" />
+                            <img src={assets.call} alt="Call Sankalpa Clinic - skin and ENT care in Vijayanagar" />
                             <a href="tel:099459 94257 / 9735121129"><div className='info-para height'> 099459 94257 / 9735121129</div></a>
                         </div>
                         <div className='flex1'>
-                            <img src={assets.mail1} alt="specialist for grey hair and hair treatment" />
+                            <img src={assets.mail1} alt="Email Sankalpa Clinic - dermatologist and ENT consultation" />
                             <a href="mailto:sriduttshekar@gmail.com"><div className='info-para height'> sriduttshekar@gmail.com</div></a>
                         </div>
 
                         <div className='info-heading'>Timings</div>
                         <div className='flex1'>
-                            <img src={assets.hair} alt="skin specialist near me vijay nagar" />
+                            <img src={assets.hair} alt="Hair and skin consultation timings - Sankalpa Clinic Bangalore" />
                             <div className='info-para width height'> Dermatology Consultation: Monday to Saturday: 10 AM - 4 PM</div>
                         </div>
                         <div className='flex1'>
-                            <img src={assets.rounded} alt="best dermatologist in vijay nagar bangalore" />
+                            <img src={assets.rounded} alt="ENT consultation timings - Sankalpa Clinic Vijayanagar" />
                             <div className='info-para height'> ENT Consultation: Monday to Saturday: 4 PM - 7 PM</div>
                         </div>
                         <div className='info-para m-l'>Sunday : Closed</div>
 
                     </div>
                     <div className='icons'>
-                        <a href=""><img className='icon-imgs' src={assets.insta} alt="pigmentation treatment clinic vijay nagar" /></a>
-                        <a href=""> <img className='icon-imgs' src={assets.facebook} alt="laser treatment for face in bangalore" /></a>
-                        <a href=""> <img className='icon-imgs' src={assets.x} alt="pimple removal treatment vijay nagar" /></a>
+                        <a href=""><img className='icon-imgs' src={assets.insta} alt="Sankalpa Clinic Instagram page - dermatology and ENT tips" /></a>
+                        <a href=""> <img className='icon-imgs' src={assets.facebook} alt="Sankalpa Clinic Facebook page - updates and testimonials" /></a>
+                        <a href=""> <img className='icon-imgs' src={assets.x} alt="Sankalpa Clinic Twitter page - ENT and skincare advice" /></a>
                     </div>
                 </div>
             </div>
