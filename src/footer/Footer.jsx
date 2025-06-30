@@ -27,7 +27,6 @@ const Footer = () => {
                     <div className='box-2-1'>
                         <div className='box-2-heading'>Sankalpa Clinic is a dual-specialty clinic in Vijayanagar offering trusted care in ENT and Dermatology, led by experienced consultants in a calm and patient-friendly space.</div>
                         <Link to={'/contact'}> <button className='box-2-btn'>Contact Us <img src={assets.arrow} alt="best treatment for tonsils inflammation" /></button></Link>
-                        <Link to={'/contact'}> <button className='box-2-btn'>Contact Us <img src={assets.arrow} alt="best treatment for tonsils inflammation" /></button></Link>
                     </div>
 
                     <div className='box-2-2'>
