@@ -27,22 +27,28 @@ const Footer = () => {
                     <div className='box-2-1'>
                         <div className='box-2-heading'>Sankalpa Clinic is a dual-specialty clinic in Vijayanagar offering trusted care in ENT and Dermatology, led by experienced consultants in a calm and patient-friendly space.</div>
                         <Link to={'/contact'}> <button className='box-2-btn'>Contact Us <img src={assets.arrow} alt="best treatment for tonsils inflammation" /></button></Link>
+                        <Link to={'/contact'}> <button className='box-2-btn'>Contact Us <img src={assets.arrow} alt="best treatment for tonsils inflammation" /></button></Link>
                     </div>
 
-                    <div className='icons-part pl '>
-                        <div className='conditions'>
-                            <div className='style'>© 2025 Sankalpa Clinic</div>
-                            <div className='style'> Privacy</div>
-                            <div className='style'> Terms</div>
+                    <div className='box-2-2'>
+                        <div className='icons-part'>
+                            <div className='conditions ml'>
+                                <div className='style'> Privacy</div>
+                                <div className='style'> Terms</div>
+                            </div>
+
+                            <div className='icon-imgs '>
+                                <a href=""> <img src={assets.xicon} alt="best doctor for nasal congestion and stuffy nose" /></a>
+                                <a href=""><img src={assets.facebookicon} alt="best ent clinic for hearing loss and ear care" /></a>
+                                <a href=""> <img src={assets.linkedin} alt="best sore throat and tonsillitis treatment" /></a>
+                                <a href=""><img src={assets.youtube} alt="best doctor for dry nose and nose allergy" /></a>
+                            </div>
                         </div>
 
-                        <div className='icon-imgs '>
-                            <a href=""> <img src={assets.xicon} alt="best doctor for nasal congestion and stuffy nose" /></a>
-                            <a href=""><img src={assets.facebookicon} alt="best ent clinic for hearing loss and ear care" /></a>
-                            <a href=""> <img src={assets.linkedin} alt="best sore throat and tonsillitis treatment" /></a>
-                            <a href=""><img src={assets.youtube} alt="best doctor for dry nose and nose allergy" /></a>
-                        </div>
+                        <div className='style mt ml'>© 2025 Sankalpa Clinic. Designed and Developed By Invention Minds</div>
                     </div>
+
+
 
                 </div>
             </div>
@@ -88,6 +94,14 @@ const Footer = () => {
                             <Link to={'/contact'}> <button className='box-2-btn'>Contact Us <img src={assets.arrow} alt="best ent doctor for polyps in nose vijay nagar" /></button></Link>
                         </div>
                     </div>
+                </div>
+
+                <div >
+                    <div className="footer-part3">
+                        <div className="styles">Privacy</div>
+                        <div className="styles">Terms</div>
+                    </div>
+                    <div className="styles mt">© 2025 Sankalpa Clinic. Designed and Developed By Invention Minds</div>
                 </div>
             </div>
         </div>
