@@ -44,7 +44,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className='style mt ml'>© 2025 Sankalpa Clinic. <a href="https://www.inventionminds.com/">Designed and Developed By Invention Minds</a></div>
+                        <div className='style mt ml'>© 2025 Sankalpa Clinic. <a href="https://www.inventionminds.com/" target='_blank'>Designed and Developed By Invention Minds</a></div>
                     </div>
 
 
@@ -100,7 +100,7 @@ const Footer = () => {
                         <div className="styles">Privacy</div>
                         <div className="styles">Terms</div>
                     </div>
-                    <div className="styles mt">© 2025 Sankalpa Clinic. <a href="https://www.inventionminds.com/">Designed and Developed By Invention Minds</a></div>
+                    <div className="styles mt">© 2025 Sankalpa Clinic. <a href="https://www.inventionminds.com/" target='_blank'>Designed and Developed By Invention Minds</a></div>
                 </div>
             </div>
         </div>
